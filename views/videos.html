@@ -1,0 +1,51 @@
+{{ template "head.html" . }}
+
+<form id=videoForm method=post name=add_video>
+    <select name=stage>
+    {{ range .Worlds }}{{ range .Stages }}
+        <option value="{{ .ID }}">{{ .World.Code }} / {{ .Name }}
+    {{ end }}{{ end }}
+    </select>
+    <select name=run></select>
+    <input name=url placeholder="https://youtu.be/xxx" required type=url>
+    <button>Add</button>
+</form>
+
+<table class=table-35-15-auto-auto-50>
+    <thead>
+        <tr>
+            <th>Stage
+            <th>Player
+            <th>Rank
+            <th class=center>Time
+            <th>URL
+    <tbody>
+    {{ range .Data }}
+        {{ $s := .Stage }}
+        {{ $w := .Stage.World }}
+        <tr>
+            <td>
+                <div class=badges>
+                    <div>
+                        <a href="{{ $w.Path }}">{{ $w.Code }}</a> /
+                        <a href="{{ $s.Path }}">{{ $s.Name }}</a>
+                    </div>
+                {{ if ne .Goal "Blue" }}
+                    <span class="goal-{{ lower .Goal }}">{{ .Goal }}</span>
+                {{ end }}
+                </div>
+            <td><a href="/players/{{ path .Player }}">{{ .Player }}</a>
+            <td class="center {{ with .Rank }}rank-{{ . }}{{ end }}">{{ .Rank }}
+            <td class=right>{{ time_sec .TimeRemaining }}
+            <td>
+                {{ if .VideoTitle }}
+                    <a href="{{ .VideoURL }}" title="{{ .VideoAuthor }} - {{ .VideoTitle }}">
+                        {{/* Assume videos with titles are YouTube for now */}}
+                        <img src='{{ asset "img/youtube.svg" }}'>
+                        <span>{{ .VideoAuthor }} - {{ .VideoTitle }}</span>
+                    </a>
+                {{ else }}
+                    <a href="{{ .VideoURL }}">{{ .VideoURL }}</a>
+                {{ end }}
+    {{ end }}
+</table>

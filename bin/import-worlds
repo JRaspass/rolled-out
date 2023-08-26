@@ -1,0 +1,80 @@
+#!/usr/bin/env perl
+
+use v5.38;
+
+use File::Find;
+use JSON::XS;
+use Path::Tiny;
+
+# World images from https://docs.rolledoutgame.com/worlds.html resize with
+# convert xxx.jpg -resize "200^>" -gravity center -crop 200x200+0+0 xxx.jpg
+my @worlds = map { code => code($_), name => $_, slug => slug($_) }, (
+    'Tranquility', 'Desert Ruins', 'Candy Factory', 'Foggy Mountains',
+    'Virtual Reality', 'Ice Cave', 'Haunted Grounds', 'Heavenly Chamber',
+    'Desolation', 'Vortex',
+);
+
+my %bg2world = (
+    BonusMap        => 0,
+    SupernovaMap    => 0,
+    GrassyHillsMap  => $worlds[0],  # Tranquility
+    DesertTempleMap => $worlds[1],  # Desert Ruins
+    CandyShopMap    => $worlds[2],  # Candy Factory
+    GothicMap       => $worlds[3],  # Foggy Mountains
+    VRMap           => $worlds[4],  # Virtual Reality
+    IceCaveMap      => $worlds[5],  # Ice Cave
+    SpookyMap       => $worlds[6],  # Haunted Grounds
+    ExtraMap        => $worlds[7],  # Heavenly Chamber
+    DesolationMap   => $worlds[8],  # Desolation
+    MasterMap       => $worlds[9],  # Vortex
+);
+
+# Find all the stage config files in the Steam directory.
+my @json;
+find sub { push @json, path $File::Find::name if $_ eq 'config.json' },
+    "$ENV{HOME}/.steam/steam/steamapps/common/rolledout/RolledOut/Content/Stages";
+
+for my $json (@json) {
+    my $conf = decode_json( $json->slurp );
+
+    my $bg = $conf->{background_map};
+    next unless my $world = $bg2world{$bg} // die "Can't find $bg\n";
+
+    push $world->{stages}->@*, my $stage = {
+        id    => $conf->{metadata}{uuid},
+        name  => $conf->{metadata}{name}{fallback},
+        slug  => slug( $conf->{metadata}{name}{fallback} ),
+        timer => $conf->{timer_seconds},
+    };
+
+    say $stage->{name};
+
+    my $png = $json->sibling('preview512.png');
+    my $jpg = path("assets/img/$world->{slug}")->mkdir->child("$stage->{slug}.jpg");
+    if ( $png->exists ) {
+        system 'convert', $png, -'resize' => '200x200', $jpg and die $@;
+    }
+}
+
+$_->{stages}->@* = sort { $a->{name} cmp $b->{name} } $_->{stages}->@*
+    for @worlds;
+
+path('model/worlds.json')->spew(
+    JSON::XS->new->canonical->pretty->encode(\@worlds));
+
+# Tranquility  → Tr
+# Desert Ruins → DR
+sub code($name) {
+    return join( '', $name =~ /([A-Z]).+([A-Z])/ ) || $name =~ /(..)/;
+}
+
+# Tranquility  → tranquility
+# Desert Ruins → desert-ruins
+sub slug($name) {
+    $name = lc $name;
+    $name =~ s/&/and/g;
+    $name =~ s/'//g;
+    $name =~ s/\W+/-/g;
+    $name =~ s/-$//;
+    return $name;
+}

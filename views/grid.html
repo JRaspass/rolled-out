@@ -1,0 +1,19 @@
+{{ template "head.html" . }}
+
+{{ range .Worlds }}
+    <details open>
+        <summary>{{ .Name }}</summary>
+        <div class=icons>
+            <a class=icon href="{{ .Path }}">
+                <img loading=lazy src='{{ asset "img" .Path ".jpg" }}'>
+                <div>All Stages</div>
+            </a>
+        {{ range .Stages }}
+            <a class=icon href="{{ .Path }}">
+                <img loading=lazy src='{{ asset "img" .Path ".jpg" }}'>
+                <div>{{ .Name }}</div>
+            </a>
+        {{ end }}
+        </div>
+    </details>
+{{ end }}

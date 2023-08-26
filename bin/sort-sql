@@ -1,0 +1,17 @@
+#!/usr/bin/env perl
+
+use v5.38;
+
+use Path::Tiny;
+
+my $path = path 'sql/b-data.sql';
+my $sql  = $path->slurp;
+
+# Sort all the lines after COPY.
+$sql =~ s{
+    (^COPY \N+ \n ) (.+?) (\n \\. $)
+}{
+    $1 . join( "\n", sort split /\n/, $2 ) . $3
+}egmsx;
+
+$path->spew($sql);

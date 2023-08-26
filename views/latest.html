@@ -1,0 +1,37 @@
+{{ template "head.html" . }}
+
+<select autofocus>
+    <option value=/latest>All
+    <option value=/latest/top-10 {{ if eq .Path "/latest/top-10" }} selected {{ end }}>Top 10
+    <option value=/latest/top-3  {{ if eq .Path "/latest/top-3"  }} selected {{ end }}>Top 3
+</select>
+
+<table class=overflow-first-second>
+    <thead>
+        <tr>
+            <th>Stage
+            <th>Player
+            <th class=center>Rank
+            <th class=right>Time
+            <th class="right wide">Points
+            <th class="right wide">Date
+    <tbody>
+    {{ range .Data }}
+        {{ $s := .Stage }}
+        <tr>
+            <td><a href="/{{ $s.World.Slug }}">{{ $s.World.Code }}</a> /
+                <a href="{{ $s.Path }}">{{ $s.Name }}</a>
+            <td><a href="/players/{{ path .Player }}">{{ .Player }}</a>
+            <td class="center rank-{{ .Rank }}">{{ .Rank }}
+            <td class=right>
+            {{ if .VideoURL }}
+                <a href="{{ .VideoURL }}" target=_blank>
+                    {{ time_sec .TimeRemaining }}
+                </a>
+            {{ else }}
+                {{ time_sec .TimeRemaining }}
+            {{ end }}
+            <td class="right wide">{{ comma .Points }}
+            <td class="right wide">{{ date .Date }}
+    {{ end }}
+</table>

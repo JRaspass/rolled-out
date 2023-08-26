@@ -1,0 +1,81 @@
+{{ template "head.html" . }}
+
+<h1>About</h1>
+
+<p>
+    Rolled Out Info is a free,
+    <a href="//github.com/JRaspass/rolled-out">open source</a>
+    website built by community developers upon the
+    <a href="//scores.rolledoutgame.com">data</a>
+    made available by Polarbyte Games for the
+    <a href="//rolledoutgame.com">Rolled Out!</a> game.
+
+<p>All data and images are property of Polarbyte Games.
+
+<p>This website is updated every hour, on the hour.
+
+<h2>Points</h2>
+
+<p>
+    Each stage offers a maximum of 1,000 points, broken up into three
+    available pools, 750, 200, and 50.
+
+<h3>750 points</h3>
+
+<p>
+    Based on your time relative to the first and last place times within the
+    Top 100.
+
+<p>
+    So if first place finished with 50 seconds and 100th place finished with
+    30 seconds, a 40 second time would net you 375 points.
+
+<h3>200 points</h3>
+
+<p>
+    Based on your ranking. Players in the Top 10 will net the following extra
+    points:
+
+<p>
+    1st - 200, 2nd - 150, 3rd - 100, 4th - 75, 5th - 60, 6th - 50, 7th - 40,
+    8th - 30, 9th -20, 10th - 10.
+
+<h3>50 points</h3>
+
+<p>
+    Everyone who makes the Top 100 leaderboard gets 50 points. This is so that
+    last place within the Top 100 still gets some deserved points.
+
+<p>
+    For example, here's how the scoring plays out for the first level,
+    <a href=/tranquility/abstraction>Abstraction</a>:
+
+<table class=overflow-second>
+    <thead>
+        <tr>
+            <th class=center>#
+            <th class=wide>Player
+            <th class=center>Time
+            <th class=center>Points
+    <tbody>
+    {{ $skip := false }}
+    {{ range .Data }}
+        {{ if and $skip (ne .Rank 100) }}
+            {{ continue }}
+        {{ end }}
+        <tr>
+            <td class="center rank-{{ .Rank }}">{{ .Rank }}
+            <td class=wide><a href="/players/{{ path .Player }}">{{ .Player }}</a>
+            <td class=right>{{ time_sec .TimeRemaining }}
+            <td>{{ .PointsTime }} + {{ .PointsRank }} + 50 = {{ comma .Points }}
+
+        {{ if and (lt 10 .Rank) (lt .Rank 100) }}
+            {{ $skip = true }}
+            <tr><td class=center colspan=4>…
+        {{ end }}
+    {{ end }}
+</table>
+
+<p>
+    A note for stages with multiple goals - only your fastest time for a stage
+    will count towards your Points, Average Rank, and Total Time.

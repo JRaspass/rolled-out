@@ -1,0 +1,29 @@
+services:
+
+  app:
+    build:
+      dockerfile: app.dockerfile
+      target: dev
+    environment:
+      PGHOST:    db
+      PGSSLMODE: disable
+      PGUSER:    rolled-out
+    ports:
+      - 80:8080
+    volumes:
+      - ..:/go
+
+  assets:
+    build:
+      dockerfile: assets.dockerfile
+    command: [--watch=forever]
+    volumes:
+      - ../assets:/assets
+
+  db:
+    image: postgres:15.4-alpine
+    environment:
+      POSTGRES_DB: rolled-out
+      POSTGRES_HOST_AUTH_METHOD: trust
+    volumes:
+      - ../sql:/docker-entrypoint-initdb.d

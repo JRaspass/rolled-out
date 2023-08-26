@@ -1,0 +1,1920 @@
+[
+   {
+      "code" : "Tr",
+      "name" : "Tranquility",
+      "slug" : "tranquility",
+      "stages" : [
+         {
+            "id" : "b268ff63-3ada-4cfa-a40e-2d217430f5fd",
+            "name" : "Abstraction",
+            "slug" : "abstraction",
+            "timer" : 60
+         },
+         {
+            "id" : "c7b0e798-5923-4c65-a2b2-b65776d38d4d",
+            "name" : "Adapter",
+            "slug" : "adapter",
+            "timer" : 90
+         },
+         {
+            "id" : "fc15a77c-3208-41fc-891c-9c2a27bec761",
+            "name" : "Airtime",
+            "slug" : "airtime",
+            "timer" : 60
+         },
+         {
+            "id" : "4fada6af-dccc-4cf4-a598-7d08c2015924",
+            "name" : "Alternate Hills",
+            "slug" : "alternate-hills",
+            "timer" : 60
+         },
+         {
+            "id" : "0d3b3bd2-0c4e-4293-8e11-45ca63d45904",
+            "name" : "Bankin' On It",
+            "slug" : "bankin-on-it",
+            "timer" : 60
+         },
+         {
+            "id" : "3aca1f67-51da-4119-bacd-b1dcab8ab530",
+            "name" : "Basics",
+            "slug" : "basics",
+            "timer" : 60
+         },
+         {
+            "id" : "a48e3de9-30af-48e8-a715-bd811c5d5baf",
+            "name" : "Bounceback",
+            "slug" : "bounceback",
+            "timer" : 60
+         },
+         {
+            "id" : "3c22c555-ca71-44e1-acaf-d1fbbc4c6287",
+            "name" : "Bowls With Holes",
+            "slug" : "bowls-with-holes",
+            "timer" : 60
+         },
+         {
+            "id" : "ef39582b-2c3c-46a8-8b85-79704f5dcfbd",
+            "name" : "Bridgemaking",
+            "slug" : "bridgemaking",
+            "timer" : 120
+         },
+         {
+            "id" : "51402fbd-9332-421d-9b46-ae46987b2682",
+            "name" : "Bridges",
+            "slug" : "bridges",
+            "timer" : 60
+         },
+         {
+            "id" : "a2e024c2-f76f-451e-9039-3b8652df0d2e",
+            "name" : "Brushstroke",
+            "slug" : "brushstroke",
+            "timer" : 60
+         },
+         {
+            "id" : "61581f34-5b65-4324-9c2c-3ef750e18cac",
+            "name" : "Canister",
+            "slug" : "canister",
+            "timer" : 60
+         },
+         {
+            "id" : "05ef298d-cea2-4d26-a2b3-7bdacff44ab9",
+            "name" : "Chains of Love",
+            "slug" : "chains-of-love",
+            "timer" : 60
+         },
+         {
+            "id" : "e2350a75-eb84-496e-be02-e20c2b9c80db",
+            "name" : "Dials",
+            "slug" : "dials",
+            "timer" : 120
+         },
+         {
+            "id" : "4863c04b-a8f3-4dde-9323-86a3a3aa8a19",
+            "name" : "Dinnerplates",
+            "slug" : "dinnerplates",
+            "timer" : 60
+         },
+         {
+            "id" : "94f1ac0c-a54a-431b-b284-70d0791c3239",
+            "name" : "Disk Travel",
+            "slug" : "disk-travel",
+            "timer" : 60
+         },
+         {
+            "id" : "41cd3594-0a28-4f6c-96df-831fd3cea31b",
+            "name" : "Doorways",
+            "slug" : "doorways",
+            "timer" : 60
+         },
+         {
+            "id" : "0af5f094-b7ba-4fd1-8ef3-a7c75ebc15c2",
+            "name" : "Farflung",
+            "slug" : "farflung",
+            "timer" : 60
+         },
+         {
+            "id" : "374eb161-aa2f-4637-9e56-296971cc2fd9",
+            "name" : "Fighter",
+            "slug" : "fighter",
+            "timer" : 60
+         },
+         {
+            "id" : "fdd86a4d-e660-4312-972d-815cd2fc0fa7",
+            "name" : "Fingers",
+            "slug" : "fingers",
+            "timer" : 60
+         },
+         {
+            "id" : "02b98fb5-cbb6-4f0c-8c84-9bd42bda0da3",
+            "name" : "Flap",
+            "slug" : "flap",
+            "timer" : 60
+         },
+         {
+            "id" : "df6a81af-0613-4d2e-8c4e-d3c70f9e1423",
+            "name" : "Flex",
+            "slug" : "flex",
+            "timer" : 60
+         },
+         {
+            "id" : "5bca527d-1751-4325-b1fe-1208bf0423b2",
+            "name" : "Focalpoint",
+            "slug" : "focalpoint",
+            "timer" : 60
+         },
+         {
+            "id" : "dd279aba-7e40-47ac-9f9c-7f6b8795439f",
+            "name" : "Handshake",
+            "slug" : "handshake",
+            "timer" : 60
+         },
+         {
+            "id" : "33a973a5-cefe-4a5f-ae60-f89665ea1b5f",
+            "name" : "Inner Descent",
+            "slug" : "inner-descent",
+            "timer" : 60
+         },
+         {
+            "id" : "ce8e502a-f107-476d-bbd1-42e8a4787cfd",
+            "name" : "J-Drop",
+            "slug" : "j-drop",
+            "timer" : 60
+         },
+         {
+            "id" : "e700d2b8-0b7b-4c80-b42e-7eed665d2c60",
+            "name" : "Landscaping",
+            "slug" : "landscaping",
+            "timer" : 60
+         },
+         {
+            "id" : "1e5d3bb0-7f41-4ad0-a753-89630d72dd62",
+            "name" : "Link",
+            "slug" : "link",
+            "timer" : 60
+         },
+         {
+            "id" : "8ab7d695-742d-4ae7-a1d7-c9f913eb4985",
+            "name" : "Mouseholes",
+            "slug" : "mouseholes",
+            "timer" : 60
+         },
+         {
+            "id" : "2e05bea4-e3ca-4dd9-b527-f6c81cf99695",
+            "name" : "No Parking",
+            "slug" : "no-parking",
+            "timer" : 60
+         },
+         {
+            "id" : "518699f3-207b-4058-addd-a7881db6e9f8",
+            "name" : "Noughts & Crosses",
+            "slug" : "noughts-and-crosses",
+            "timer" : 60
+         },
+         {
+            "id" : "f9b2526c-c5f6-4ad2-99a1-6eedae1ba209",
+            "name" : "Obstacles",
+            "slug" : "obstacles",
+            "timer" : 60
+         },
+         {
+            "id" : "fb66ed76-b5a9-4aa7-bac6-68b38e7b80be",
+            "name" : "Padlock",
+            "slug" : "padlock",
+            "timer" : 60
+         },
+         {
+            "id" : "97da221f-7b63-41dd-b65f-12ea34517578",
+            "name" : "Parallax",
+            "slug" : "parallax",
+            "timer" : 60
+         },
+         {
+            "id" : "64dfa65a-f7a0-495a-b752-9b4b6906a356",
+            "name" : "Playground",
+            "slug" : "playground",
+            "timer" : 300
+         },
+         {
+            "id" : "0201e27b-27cd-456f-8330-22ffdbcb8f0c",
+            "name" : "Poops Table",
+            "slug" : "poops-table",
+            "timer" : 120
+         },
+         {
+            "id" : "7689dbe0-20bc-49b3-b010-79fa0195678e",
+            "name" : "Revolver",
+            "slug" : "revolver",
+            "timer" : 120
+         },
+         {
+            "id" : "47acefc8-3d56-4534-9780-f86b340ed7ad",
+            "name" : "Ringsaws",
+            "slug" : "ringsaws",
+            "timer" : 60
+         },
+         {
+            "id" : "2658eb9f-4e2e-4e60-aadd-7eb0553ac034",
+            "name" : "Rollers",
+            "slug" : "rollers",
+            "timer" : 60
+         },
+         {
+            "id" : "ce755a77-a752-477c-9e3f-26a7a76558f1",
+            "name" : "Seesawbstacles",
+            "slug" : "seesawbstacles",
+            "timer" : 60
+         },
+         {
+            "id" : "96d6c08e-601b-4013-ad64-e26fcf9507cc",
+            "name" : "Seesaws",
+            "slug" : "seesaws",
+            "timer" : 60
+         },
+         {
+            "id" : "21385cbb-a9f5-4ab4-978d-b23f9a3598c6",
+            "name" : "Snake",
+            "slug" : "snake",
+            "timer" : 60
+         },
+         {
+            "id" : "eadcc49d-e162-4025-b104-e2149324be2f",
+            "name" : "Spiraling",
+            "slug" : "spiraling",
+            "timer" : 60
+         },
+         {
+            "id" : "be58d4f5-a260-44ef-a564-09a0c1b75563",
+            "name" : "Springs",
+            "slug" : "springs",
+            "timer" : 60
+         },
+         {
+            "id" : "53d15776-ea5a-478f-91f7-8a06e3f3fa79",
+            "name" : "Stacked Floors",
+            "slug" : "stacked-floors",
+            "timer" : 60
+         },
+         {
+            "id" : "d8260770-e514-4f54-96fc-90f14ff43a19",
+            "name" : "Tilted",
+            "slug" : "tilted",
+            "timer" : 30
+         },
+         {
+            "id" : "1df0862e-edb6-45be-9d27-cbf91fb4c273",
+            "name" : "Tower",
+            "slug" : "tower",
+            "timer" : 60
+         },
+         {
+            "id" : "41883a89-0091-4d6f-9500-dc68c6b9c15f",
+            "name" : "Triple Threat",
+            "slug" : "triple-threat",
+            "timer" : 60
+         },
+         {
+            "id" : "346a48c4-6c79-41c2-bb46-8c1f798cd948",
+            "name" : "Tube",
+            "slug" : "tube",
+            "timer" : 60
+         },
+         {
+            "id" : "da21ac11-0140-47a7-ad7d-b03345ea062c",
+            "name" : "Up & Up",
+            "slug" : "up-and-up",
+            "timer" : 60
+         },
+         {
+            "id" : "044cc2bd-9817-42de-972d-cae5eb95c48f",
+            "name" : "Upjump",
+            "slug" : "upjump",
+            "timer" : 60
+         },
+         {
+            "id" : "6d3d5aaf-c8c9-4ea8-b609-d2d3f4856566",
+            "name" : "Velocity",
+            "slug" : "velocity",
+            "timer" : 90
+         },
+         {
+            "id" : "22f03271-6c24-4b1e-a468-4cf88fe618ed",
+            "name" : "Warrior",
+            "slug" : "warrior",
+            "timer" : 60
+         },
+         {
+            "id" : "49d87877-0e38-49cf-a197-017f8caedee0",
+            "name" : "Wavelength",
+            "slug" : "wavelength",
+            "timer" : 60
+         },
+         {
+            "id" : "1ae73094-1edc-422c-a166-7cf786874d4d",
+            "name" : "Worm",
+            "slug" : "worm",
+            "timer" : 60
+         },
+         {
+            "id" : "7f7b6a98-151c-4c16-be99-4f6a4814ee6d",
+            "name" : "Zigzag",
+            "slug" : "zigzag",
+            "timer" : 60
+         }
+      ]
+   },
+   {
+      "code" : "DR",
+      "name" : "Desert Ruins",
+      "slug" : "desert-ruins",
+      "stages" : [
+         {
+            "id" : "e37c43d3-4ac3-4d6b-b223-a541880704fc",
+            "name" : "Backstroke",
+            "slug" : "backstroke",
+            "timer" : 60
+         },
+         {
+            "id" : "8af682cc-db7f-44b8-877e-581885a04120",
+            "name" : "Ballsy Bounce",
+            "slug" : "ballsy-bounce",
+            "timer" : 60
+         },
+         {
+            "id" : "9336aefc-32d6-4e89-879a-2e8c7e526eff",
+            "name" : "Beachside",
+            "slug" : "beachside",
+            "timer" : 60
+         },
+         {
+            "id" : "c2b9d4d9-03c5-44e8-b391-25c7f4e735f4",
+            "name" : "Box and Forth",
+            "slug" : "box-and-forth",
+            "timer" : 60
+         },
+         {
+            "id" : "1a38e358-e530-4b9f-a20e-98306c5e0b42",
+            "name" : "Bump Jump",
+            "slug" : "bump-jump",
+            "timer" : null
+         },
+         {
+            "id" : "7b361dd8-77e8-4926-ae20-ddc621e8f6c9",
+            "name" : "Crumple",
+            "slug" : "crumple",
+            "timer" : 60
+         },
+         {
+            "id" : "43d03604-c77d-472b-9a39-61b5943c66d6",
+            "name" : "Dead Impact",
+            "slug" : "dead-impact",
+            "timer" : 60
+         },
+         {
+            "id" : "e6208b21-27b4-4c07-b77f-1a00933eeb8c",
+            "name" : "Disarray",
+            "slug" : "disarray",
+            "timer" : 60
+         },
+         {
+            "id" : "8e932d08-daf1-4aba-84ee-aaa0d68fbf58",
+            "name" : "Flywheels",
+            "slug" : "flywheels",
+            "timer" : 60
+         },
+         {
+            "id" : "b7eca962-34b6-4a99-a07f-e5f2f8df1c85",
+            "name" : "Fractured",
+            "slug" : "fractured",
+            "timer" : 60
+         },
+         {
+            "id" : "bf6c18eb-ee18-4bb7-9104-477cc87134e3",
+            "name" : "Game of Life",
+            "slug" : "game-of-life",
+            "timer" : 60
+         },
+         {
+            "id" : "bcf02d63-88f3-47a8-95ef-2ce1dda400a6",
+            "name" : "Holey Ascension",
+            "slug" : "holey-ascension",
+            "timer" : null
+         },
+         {
+            "id" : "3d10a752-a934-4e53-b4d8-4bf3dd0a4452",
+            "name" : "Jacob's Ladder",
+            "slug" : "jacobs-ladder",
+            "timer" : 60
+         },
+         {
+            "id" : "acf479ab-b757-4879-ba50-e4e86f203869",
+            "name" : "Judgment",
+            "slug" : "judgment",
+            "timer" : 60
+         },
+         {
+            "id" : "03f1c720-df14-4ed5-8deb-269e6cc53fc1",
+            "name" : "Jumpy Options",
+            "slug" : "jumpy-options",
+            "timer" : 60
+         },
+         {
+            "id" : "3364fc28-d354-42dd-8099-917694ccbc8b",
+            "name" : "Meeting",
+            "slug" : "meeting",
+            "timer" : 90
+         },
+         {
+            "id" : "e2e3cb8a-d8da-4be2-abd6-6a3a24587905",
+            "name" : "Not-So-Quicksand",
+            "slug" : "not-so-quicksand",
+            "timer" : 60
+         },
+         {
+            "id" : "582db3a8-9feb-4220-bce7-c9b6929a9e14",
+            "name" : "Obstruction",
+            "slug" : "obstruction",
+            "timer" : 60
+         },
+         {
+            "id" : "0543a752-63a9-4129-b78a-7d6563ab27bd",
+            "name" : "Pattern",
+            "slug" : "pattern",
+            "timer" : 60
+         },
+         {
+            "id" : "b8fa3b44-05c4-4726-9382-03b1214dd58f",
+            "name" : "Pegboard",
+            "slug" : "pegboard",
+            "timer" : 60
+         },
+         {
+            "id" : "cbb1afa8-d8e0-41c7-af87-91d46134e617",
+            "name" : "Pyramid of Pain",
+            "slug" : "pyramid-of-pain",
+            "timer" : 180
+         },
+         {
+            "id" : "8b155b06-be0e-45d1-8a88-694fcd58b3a7",
+            "name" : "Sandy Panels",
+            "slug" : "sandy-panels",
+            "timer" : 60
+         },
+         {
+            "id" : "ea6f5885-889c-4bad-b99d-336837bbd050",
+            "name" : "Skeleton Key",
+            "slug" : "skeleton-key",
+            "timer" : 60
+         },
+         {
+            "id" : "1b718b36-095e-47a8-85f4-4fbad44cbe5c",
+            "name" : "Snakeway",
+            "slug" : "snakeway",
+            "timer" : 120
+         },
+         {
+            "id" : "02ef33da-3cf5-4ca8-9788-ecfc1b0cb680",
+            "name" : "Squiff",
+            "slug" : "squiff",
+            "timer" : 60
+         },
+         {
+            "id" : "8eee1586-ac71-4227-96d3-04a16f5947ac",
+            "name" : "Squiggly",
+            "slug" : "squiggly",
+            "timer" : 60
+         },
+         {
+            "id" : "7e5e1a29-8769-4495-b9b9-160a183cd662",
+            "name" : "Switchboard",
+            "slug" : "switchboard",
+            "timer" : 60
+         },
+         {
+            "id" : "bfa4c7a9-6135-45ff-81a3-a8a41033263f",
+            "name" : "Touch Activation",
+            "slug" : "touch-activation",
+            "timer" : 60
+         },
+         {
+            "id" : "71f79122-214f-4368-bb15-1a7e810fb1d2",
+            "name" : "Tradeoff",
+            "slug" : "tradeoff",
+            "timer" : 60
+         },
+         {
+            "id" : "7c585c44-a2ba-4a83-acfe-850abef8f7f1",
+            "name" : "Twist & Tumble",
+            "slug" : "twist-and-tumble",
+            "timer" : 60
+         },
+         {
+            "id" : "fea3d37e-401e-4b81-a03f-df1824c8dec9",
+            "name" : "Watch Your Step",
+            "slug" : "watch-your-step",
+            "timer" : 60
+         },
+         {
+            "id" : "4327e769-5376-479b-9487-7d903f167cea",
+            "name" : "You Will Love This Level",
+            "slug" : "you-will-love-this-level",
+            "timer" : 60
+         }
+      ]
+   },
+   {
+      "code" : "CF",
+      "name" : "Candy Factory",
+      "slug" : "candy-factory",
+      "stages" : [
+         {
+            "id" : "18c205fe-2765-4ef6-b6e3-5cd2e4d822a0",
+            "name" : "Abduction",
+            "slug" : "abduction",
+            "timer" : 60
+         },
+         {
+            "id" : "9ad1f36c-fa35-4a7d-ad42-e55a93a3003f",
+            "name" : "Belt Bridges",
+            "slug" : "belt-bridges",
+            "timer" : 60
+         },
+         {
+            "id" : "bd0adcc2-069b-43a0-af49-b5da40290f74",
+            "name" : "Boost Through",
+            "slug" : "boost-through",
+            "timer" : 120
+         },
+         {
+            "id" : "d1edf8b9-15cb-4cb5-b90c-d74e36131be0",
+            "name" : "Broken Paddle",
+            "slug" : "broken-paddle",
+            "timer" : 60
+         },
+         {
+            "id" : "088fdddb-8234-4613-b0c5-2d88462cdfb1",
+            "name" : "Cane Waltz",
+            "slug" : "cane-waltz",
+            "timer" : 60
+         },
+         {
+            "id" : "6e0ad2b2-bed7-4818-9333-3771ec5e806e",
+            "name" : "Carved Tube",
+            "slug" : "carved-tube",
+            "timer" : 60
+         },
+         {
+            "id" : "a43d60b7-dd3f-4a14-870d-b7020800c897",
+            "name" : "Caterpillar",
+            "slug" : "caterpillar",
+            "timer" : 60
+         },
+         {
+            "id" : "f39cff24-1f3f-4d1f-83ba-3540b1872e7f",
+            "name" : "Conveyer Belts",
+            "slug" : "conveyer-belts",
+            "timer" : 60
+         },
+         {
+            "id" : "7563f4ed-3baf-4211-9943-8778f5fff686",
+            "name" : "Crescent Rider",
+            "slug" : "crescent-rider",
+            "timer" : 60
+         },
+         {
+            "id" : "ff72d08f-706d-4340-bdfa-b9934e91f09f",
+            "name" : "Cross-Pop",
+            "slug" : "cross-pop",
+            "timer" : 60
+         },
+         {
+            "id" : "92be9d16-3d9f-4c79-a726-0db7110b4db7",
+            "name" : "Dart Cannon",
+            "slug" : "dart-cannon",
+            "timer" : 40
+         },
+         {
+            "id" : "2a36b3f8-1b04-47ac-928c-2c8667d7d41d",
+            "name" : "Dissonant Gears",
+            "slug" : "dissonant-gears",
+            "timer" : null
+         },
+         {
+            "id" : "a2dd6cf7-c26b-44ff-9e2e-6fc083cbd9ae",
+            "name" : "Erosion",
+            "slug" : "erosion",
+            "timer" : 60
+         },
+         {
+            "id" : "28615ea3-736e-4141-9f4a-5746b23e610f",
+            "name" : "Eye to Eye",
+            "slug" : "eye-to-eye",
+            "timer" : null
+         },
+         {
+            "id" : "a04eeb2b-bae0-454d-b0c2-1f80fe0ca555",
+            "name" : "Frantic",
+            "slug" : "frantic",
+            "timer" : 120
+         },
+         {
+            "id" : "0d66cb97-ee40-4eee-938b-3c9f4b52d967",
+            "name" : "Function",
+            "slug" : "function",
+            "timer" : null
+         },
+         {
+            "id" : "93cc0927-3b72-4ff7-8860-e27cf00a6c97",
+            "name" : "Funnel Cake",
+            "slug" : "funnel-cake",
+            "timer" : 60
+         },
+         {
+            "id" : "6c636677-ae2b-43bd-b2d0-d401a4759ed9",
+            "name" : "Gumballs",
+            "slug" : "gumballs",
+            "timer" : 60
+         },
+         {
+            "id" : "bbf2f493-e2f1-4063-b32c-254c645eb3a0",
+            "name" : "Lifts",
+            "slug" : "lifts",
+            "timer" : 60
+         },
+         {
+            "id" : "7c7f848b-e6c3-4309-957d-8c84b7d614c3",
+            "name" : "Manual Power",
+            "slug" : "manual-power",
+            "timer" : 60
+         },
+         {
+            "id" : "0e92b5ef-71f0-4253-ac9a-2f36cf837703",
+            "name" : "Mechanical Configuration",
+            "slug" : "mechanical-configuration",
+            "timer" : 60
+         },
+         {
+            "id" : "93538b5a-3a1c-42f4-8039-21a8a0ef2dd1",
+            "name" : "Mitosis",
+            "slug" : "mitosis",
+            "timer" : 60
+         },
+         {
+            "id" : "516b0480-cf5c-4ca8-b12d-3690d1152b5e",
+            "name" : "Pedaling",
+            "slug" : "pedaling",
+            "timer" : 60
+         },
+         {
+            "id" : "5947febf-93c6-4d54-a840-3b27e0092526",
+            "name" : "Peek-A-Boo",
+            "slug" : "peek-a-boo",
+            "timer" : 60
+         },
+         {
+            "id" : "b479fe6f-0a64-49b9-b0dc-50dd827d08e5",
+            "name" : "Precarious Perch",
+            "slug" : "precarious-perch",
+            "timer" : 60
+         },
+         {
+            "id" : "486681ea-c675-4c56-8340-b50842bd084c",
+            "name" : "Ramp Rush",
+            "slug" : "ramp-rush",
+            "timer" : 60
+         },
+         {
+            "id" : "0d27c736-4a55-4eaf-991f-a5351369ab63",
+            "name" : "Sidestep",
+            "slug" : "sidestep",
+            "timer" : 60
+         },
+         {
+            "id" : "81e7de0f-13e8-4621-b80b-46fb4df6e442",
+            "name" : "Silly Spokes",
+            "slug" : "silly-spokes",
+            "timer" : 60
+         },
+         {
+            "id" : "2e6715b3-8365-4e09-ad0d-790fd42e4d78",
+            "name" : "Snug",
+            "slug" : "snug",
+            "timer" : 60
+         },
+         {
+            "id" : "9a01c15d-425e-4c85-91c1-d09e11a0fdbb",
+            "name" : "Spinning Spirals",
+            "slug" : "spinning-spirals",
+            "timer" : 60
+         },
+         {
+            "id" : "957597ab-ed3f-4787-9ef6-d92d2a476296",
+            "name" : "Spokes",
+            "slug" : "spokes",
+            "timer" : 60
+         },
+         {
+            "id" : "efb38853-513d-4655-bea5-fbdad18f76df",
+            "name" : "Sticky Floors",
+            "slug" : "sticky-floors",
+            "timer" : 60
+         },
+         {
+            "id" : "b9e4a71b-1941-4e46-8ea8-b577de0df425",
+            "name" : "Sugar Cones",
+            "slug" : "sugar-cones",
+            "timer" : null
+         },
+         {
+            "id" : "f6fd710b-91b8-4298-ab9f-f6a05f7669f9",
+            "name" : "Swing Hammer",
+            "slug" : "swing-hammer",
+            "timer" : 60
+         },
+         {
+            "id" : "de95e989-0c7b-4111-9cf7-4fa4a89b0d4a",
+            "name" : "Tick Tick",
+            "slug" : "tick-tick",
+            "timer" : 60
+         },
+         {
+            "id" : "c7b69476-d95c-412c-ba6f-7c1b86317e05",
+            "name" : "Tilt Path",
+            "slug" : "tilt-path",
+            "timer" : 60
+         },
+         {
+            "id" : "9611b9dd-782e-43d4-86b8-1c5124109f6b",
+            "name" : "Traffic",
+            "slug" : "traffic",
+            "timer" : 90
+         },
+         {
+            "id" : "50b1392a-a43c-494c-806e-2dd1fa6df164",
+            "name" : "Tripledecker",
+            "slug" : "tripledecker",
+            "timer" : 60
+         },
+         {
+            "id" : "e20725ac-da8a-48cc-8710-8e948de679a1",
+            "name" : "Tunnel Funnel",
+            "slug" : "tunnel-funnel",
+            "timer" : null
+         },
+         {
+            "id" : "11af8803-674b-42e2-aa8d-1f7dc323218b",
+            "name" : "Twisting Path",
+            "slug" : "twisting-path",
+            "timer" : 60
+         },
+         {
+            "id" : "095b33c5-eb93-45d8-813c-d1c827374dca",
+            "name" : "Whirlies",
+            "slug" : "whirlies",
+            "timer" : 60
+         },
+         {
+            "id" : "cfe18cdd-ceaf-4dcd-b6c9-5492be89de5a",
+            "name" : "Winding Wafers",
+            "slug" : "winding-wafers",
+            "timer" : 90
+         },
+         {
+            "id" : "d19d588b-8fb0-42d4-96bc-52c36bd08c21",
+            "name" : "Windmills",
+            "slug" : "windmills",
+            "timer" : 60
+         }
+      ]
+   },
+   {
+      "code" : "FM",
+      "name" : "Foggy Mountains",
+      "slug" : "foggy-mountains",
+      "stages" : [
+         {
+            "id" : "dc7ac737-9a0b-4bb5-9e74-a7e0154bd137",
+            "name" : "Artificial Hurricane",
+            "slug" : "artificial-hurricane",
+            "timer" : 60
+         },
+         {
+            "id" : "3bf6a02f-070c-4fb3-b7b3-d2fe1cb9488b",
+            "name" : "Beholden",
+            "slug" : "beholden",
+            "timer" : 60
+         },
+         {
+            "id" : "45584760-6793-41a2-983e-cd4f979545e3",
+            "name" : "Bicycle",
+            "slug" : "bicycle",
+            "timer" : 60
+         },
+         {
+            "id" : "32e968ba-f0fb-484b-82da-4274d10e9b83",
+            "name" : "Bubbles",
+            "slug" : "bubbles",
+            "timer" : null
+         },
+         {
+            "id" : "017eabd8-d319-486a-ad6e-69276e930234",
+            "name" : "Conservation",
+            "slug" : "conservation",
+            "timer" : 60
+         },
+         {
+            "id" : "e80675b9-5b98-47f5-8dfe-80efe4ebf985",
+            "name" : "Corner Crossings",
+            "slug" : "corner-crossings",
+            "timer" : 30
+         },
+         {
+            "id" : "103a2951-08db-4a65-a6b4-a242aef45890",
+            "name" : "Cross Peen",
+            "slug" : "cross-peen",
+            "timer" : null
+         },
+         {
+            "id" : "6b9671d3-78e9-4f6a-8c00-c942cd2122c5",
+            "name" : "Crosswind",
+            "slug" : "crosswind",
+            "timer" : 60
+         },
+         {
+            "id" : "2af68cdc-e89a-43ca-973e-7cda6274e574",
+            "name" : "Cubic Crossing",
+            "slug" : "cubic-crossing",
+            "timer" : 30
+         },
+         {
+            "id" : "222d739a-8a64-479f-b810-f8402aa68405",
+            "name" : "Destabilizer",
+            "slug" : "destabilizer",
+            "timer" : 60
+         },
+         {
+            "id" : "2d5a485d-d551-4699-ad79-0ddad156c446",
+            "name" : "Dream Catcher",
+            "slug" : "dream-catcher",
+            "timer" : null
+         },
+         {
+            "id" : "8787487c-4ef0-4dea-bab0-2709e0932504",
+            "name" : "Dumbbell",
+            "slug" : "dumbbell",
+            "timer" : null
+         },
+         {
+            "id" : "82de5b4e-2e45-4467-9ba3-bbd4d4d352c1",
+            "name" : "Focus Fall",
+            "slug" : "focus-fall",
+            "timer" : null
+         },
+         {
+            "id" : "0b21747e-4e63-4326-b106-a8842e63404d",
+            "name" : "Foursquare",
+            "slug" : "foursquare",
+            "timer" : 90
+         },
+         {
+            "id" : "264bd4df-51c4-4baf-ab27-29848b6f0956",
+            "name" : "Goofy Geometry",
+            "slug" : "goofy-geometry",
+            "timer" : 60
+         },
+         {
+            "id" : "c0f55d69-89ac-428a-8aba-496fbe952678",
+            "name" : "Head On",
+            "slug" : "head-on",
+            "timer" : null
+         },
+         {
+            "id" : "7cdf1452-a6e0-4371-b168-53008e8557c6",
+            "name" : "Holes",
+            "slug" : "holes",
+            "timer" : 60
+         },
+         {
+            "id" : "d5efd344-ac48-4adf-9991-bce820d3e3cb",
+            "name" : "Lateral Rungs",
+            "slug" : "lateral-rungs",
+            "timer" : 60
+         },
+         {
+            "id" : "e8c6922c-9ca2-433b-8d66-b2f5232b3c15",
+            "name" : "Mechanism",
+            "slug" : "mechanism",
+            "timer" : 120
+         },
+         {
+            "id" : "203acc5d-9648-48e2-9455-bb6d6c373b23",
+            "name" : "Merged Macaroni",
+            "slug" : "merged-macaroni",
+            "timer" : 60
+         },
+         {
+            "id" : "84765d0e-21f8-4138-ba3b-50b8149b64f1",
+            "name" : "Parkour",
+            "slug" : "parkour",
+            "timer" : 60
+         },
+         {
+            "id" : "0c2b94bc-fd58-49b0-bed4-54e74c1a487c",
+            "name" : "Pathing",
+            "slug" : "pathing",
+            "timer" : 90
+         },
+         {
+            "id" : "02a27dc2-ab0d-46f9-af6d-6abf494c08d0",
+            "name" : "Return",
+            "slug" : "return",
+            "timer" : 60
+         },
+         {
+            "id" : "8e1e5189-5cef-43e7-bf22-e44a0824bda8",
+            "name" : "Roulette",
+            "slug" : "roulette",
+            "timer" : null
+         },
+         {
+            "id" : "0b644667-5570-4419-99f2-c965a0b9bd77",
+            "name" : "Spiral Tower",
+            "slug" : "spiral-tower",
+            "timer" : 60
+         },
+         {
+            "id" : "af49641f-6635-4d0c-b3ae-107c0dd4bcbf",
+            "name" : "Treacherous Trot",
+            "slug" : "treacherous-trot",
+            "timer" : 90
+         },
+         {
+            "id" : "ba4a33c4-5bc3-447d-ad7c-aefdba405f5e",
+            "name" : "Tunnel Fall",
+            "slug" : "tunnel-fall",
+            "timer" : 60
+         },
+         {
+            "id" : "284a4195-6faa-4e1c-a84e-988550f6be86",
+            "name" : "Windy",
+            "slug" : "windy",
+            "timer" : 60
+         },
+         {
+            "id" : "5dabedb9-4ce5-43a6-8f27-6fb1d3e311c2",
+            "name" : "Windy Walk",
+            "slug" : "windy-walk",
+            "timer" : 60
+         }
+      ]
+   },
+   {
+      "code" : "VR",
+      "name" : "Virtual Reality",
+      "slug" : "virtual-reality",
+      "stages" : [
+         {
+            "id" : "6a73c055-c374-4e55-87a2-91d1b804decd",
+            "name" : "4-D",
+            "slug" : "4-d",
+            "timer" : 60
+         },
+         {
+            "id" : "e1fc9b7d-cef2-48bd-ae43-5b99598283a1",
+            "name" : "Attachment",
+            "slug" : "attachment",
+            "timer" : null
+         },
+         {
+            "id" : "4cd0b7d1-8177-4191-b5da-14ff41c4ee35",
+            "name" : "Barrel",
+            "slug" : "barrel",
+            "timer" : 60
+         },
+         {
+            "id" : "a9cd83bd-a32a-4bd8-94f4-3de02994c6ce",
+            "name" : "Bent Clip",
+            "slug" : "bent-clip",
+            "timer" : 60
+         },
+         {
+            "id" : "5dcd1412-6828-4e79-937e-55d18e861b53",
+            "name" : "Buildup",
+            "slug" : "buildup",
+            "timer" : 60
+         },
+         {
+            "id" : "299a2db3-71a9-49fb-98b3-bfd7fd4b7c55",
+            "name" : "Cardboard",
+            "slug" : "cardboard",
+            "timer" : 60
+         },
+         {
+            "id" : "16765cd2-c966-498b-b7ed-ddd5e312bad4",
+            "name" : "Careful Corners",
+            "slug" : "careful-corners",
+            "timer" : 60
+         },
+         {
+            "id" : "f1db6eeb-937c-4567-aaed-866a4fb76e22",
+            "name" : "Cartridge",
+            "slug" : "cartridge",
+            "timer" : 60
+         },
+         {
+            "id" : "6f1bf6b3-3550-4f2f-8f51-90cf1196ba84",
+            "name" : "Change of Pace",
+            "slug" : "change-of-pace",
+            "timer" : 120
+         },
+         {
+            "id" : "aecf6fc7-0d80-42bf-a060-6a225edb3492",
+            "name" : "Coil",
+            "slug" : "coil",
+            "timer" : null
+         },
+         {
+            "id" : "b2ff131c-b4aa-409b-9b47-607c0e2144a3",
+            "name" : "Containment",
+            "slug" : "containment",
+            "timer" : 120
+         },
+         {
+            "id" : "be45a1bc-7248-4aa9-a32e-1401fd7f9540",
+            "name" : "Crazy Knot",
+            "slug" : "crazy-knot",
+            "timer" : 120
+         },
+         {
+            "id" : "8dfc2b5c-4d89-4b8c-9691-74ae0857159e",
+            "name" : "Fling Rings",
+            "slug" : "fling-rings",
+            "timer" : 60
+         },
+         {
+            "id" : "c9dff177-d1cd-44fd-ab03-11051a106cc4",
+            "name" : "Flower",
+            "slug" : "flower",
+            "timer" : 30
+         },
+         {
+            "id" : "4edb461c-e5a6-46fb-9858-c32efca56ab7",
+            "name" : "Gravity",
+            "slug" : "gravity",
+            "timer" : 60
+         },
+         {
+            "id" : "e120ed2c-e45f-49e8-9a51-350f9a526990",
+            "name" : "Gravity Corners",
+            "slug" : "gravity-corners",
+            "timer" : 30
+         },
+         {
+            "id" : "45a672c5-36d9-4cee-bacd-33af6b0988e5",
+            "name" : "Inverse",
+            "slug" : "inverse",
+            "timer" : 30
+         },
+         {
+            "id" : "6373e983-fd4c-46e2-a77f-41ab5dc925d3",
+            "name" : "Inward",
+            "slug" : "inward",
+            "timer" : 60
+         },
+         {
+            "id" : "9446571e-fa70-4c22-80ed-e92478abd8bd",
+            "name" : "Leap Transfer",
+            "slug" : "leap-transfer",
+            "timer" : 60
+         },
+         {
+            "id" : "fee2b1d2-b321-4ef5-b605-541620d691f2",
+            "name" : "Linked Blocks",
+            "slug" : "linked-blocks",
+            "timer" : 60
+         },
+         {
+            "id" : "c8c25a90-2de0-4d64-a800-3c9ded6301f8",
+            "name" : "Millipede",
+            "slug" : "millipede",
+            "timer" : 60
+         },
+         {
+            "id" : "8eb04b65-4b4c-4dba-aadf-f329e9702f37",
+            "name" : "Mindbender",
+            "slug" : "mindbender",
+            "timer" : 90
+         },
+         {
+            "id" : "06e0fab4-f619-4e37-8785-3e72431b20e6",
+            "name" : "Perspective",
+            "slug" : "perspective",
+            "timer" : 60
+         },
+         {
+            "id" : "ddae2289-6ae4-4e52-9514-153846665795",
+            "name" : "Pop Quiz",
+            "slug" : "pop-quiz",
+            "timer" : 60
+         },
+         {
+            "id" : "19256e9a-62f9-4c20-87c6-824345d51d56",
+            "name" : "Retroreflection",
+            "slug" : "retroreflection",
+            "timer" : 60
+         },
+         {
+            "id" : "8a0af348-cc21-4081-8ed9-32926a872d0d",
+            "name" : "Round and Around",
+            "slug" : "round-and-around",
+            "timer" : 60
+         },
+         {
+            "id" : "94523e51-96ce-4d6c-b409-ff8f4d9596b4",
+            "name" : "Scoopers",
+            "slug" : "scoopers",
+            "timer" : 60
+         },
+         {
+            "id" : "64f48f6f-26ef-45c5-b495-43346b37d9f8",
+            "name" : "Scorpion's Tail",
+            "slug" : "scorpions-tail",
+            "timer" : 30
+         },
+         {
+            "id" : "eca92b92-fa82-4ea6-b5a1-ca917da0288e",
+            "name" : "Self-Recursion",
+            "slug" : "self-recursion",
+            "timer" : 60
+         },
+         {
+            "id" : "25c96c5a-e06d-4f1f-a092-262fe29acf38",
+            "name" : "Shattered Shapes",
+            "slug" : "shattered-shapes",
+            "timer" : 60
+         },
+         {
+            "id" : "50bb5513-0a3c-45d7-a255-17a07df74d56",
+            "name" : "Sierpinski Seesaws",
+            "slug" : "sierpinski-seesaws",
+            "timer" : 60
+         },
+         {
+            "id" : "bafd2f61-1036-4cb7-bfe2-9507fecd4184",
+            "name" : "Slideoff",
+            "slug" : "slideoff",
+            "timer" : 60
+         },
+         {
+            "id" : "250eeb4f-2a71-4225-8d69-5d916d5ae8a4",
+            "name" : "Station",
+            "slug" : "station",
+            "timer" : 60
+         },
+         {
+            "id" : "29d53c1e-0346-46ef-84a8-ee7b294aaef6",
+            "name" : "Streets",
+            "slug" : "streets",
+            "timer" : 120
+         },
+         {
+            "id" : "a7d5dc95-72a2-47af-9f14-6478c0b8f9f3",
+            "name" : "Structure",
+            "slug" : "structure",
+            "timer" : 30
+         },
+         {
+            "id" : "321b4dd3-3e29-475c-b1ba-1daa905a282f",
+            "name" : "Terminal Velocity",
+            "slug" : "terminal-velocity",
+            "timer" : null
+         },
+         {
+            "id" : "80787a93-aa6b-49db-81d5-fe589d4de929",
+            "name" : "Tracks",
+            "slug" : "tracks",
+            "timer" : 90
+         },
+         {
+            "id" : "da04ae29-3e4d-4000-8f4d-a9769f6f89b8",
+            "name" : "Tummy Turner",
+            "slug" : "tummy-turner",
+            "timer" : 60
+         },
+         {
+            "id" : "3cd7cfef-bd0a-4f34-a4bb-66ea2fce0284",
+            "name" : "Twisting Tiles",
+            "slug" : "twisting-tiles",
+            "timer" : 60
+         },
+         {
+            "id" : "fb58de3d-1b22-4324-b914-2607416da9c6",
+            "name" : "Wheely Weird",
+            "slug" : "wheely-weird",
+            "timer" : 60
+         },
+         {
+            "id" : "f6c895f5-29b8-434e-84d2-21552408173f",
+            "name" : "Wobbly Wire",
+            "slug" : "wobbly-wire",
+            "timer" : 60
+         },
+         {
+            "id" : "a68b8bec-898b-428a-8111-b7cb80b11aeb",
+            "name" : "Worm",
+            "slug" : "worm",
+            "timer" : 60
+         },
+         {
+            "id" : "913a3aa7-105f-4974-8990-8ffb8bb60e9d",
+            "name" : "Wormholes",
+            "slug" : "wormholes",
+            "timer" : null
+         }
+      ]
+   },
+   {
+      "code" : "IC",
+      "name" : "Ice Cave",
+      "slug" : "ice-cave",
+      "stages" : [
+         {
+            "id" : "3ffdd24f-67b4-49d9-b20c-45ee8f5dfd6a",
+            "name" : "A Sport Involving Ice and Stones",
+            "slug" : "a-sport-involving-ice-and-stones",
+            "timer" : 60
+         },
+         {
+            "id" : "8763d339-5ada-4877-a7d8-4c21bfe0d40d",
+            "name" : "Branches",
+            "slug" : "branches",
+            "timer" : 60
+         },
+         {
+            "id" : "bba39ae1-fcbe-4772-a2a0-c46d337105f5",
+            "name" : "Chip Off the Block",
+            "slug" : "chip-off-the-block",
+            "timer" : 60
+         },
+         {
+            "id" : "29a8645c-959c-4d79-963e-9f305ade19ef",
+            "name" : "Churn",
+            "slug" : "churn",
+            "timer" : 60
+         },
+         {
+            "id" : "8fa2a9d0-c7ee-4b7b-be7d-86c7f8c53fa9",
+            "name" : "Clamber",
+            "slug" : "clamber",
+            "timer" : 60
+         },
+         {
+            "id" : "1fe540d7-5322-4379-9651-271c060e9e71",
+            "name" : "Crescents",
+            "slug" : "crescents",
+            "timer" : 60
+         },
+         {
+            "id" : "a8b2bcd7-dc73-4441-86f3-2dc11aebee31",
+            "name" : "Fidget",
+            "slug" : "fidget",
+            "timer" : 60
+         },
+         {
+            "id" : "4351f442-f669-47d4-bde0-7be6d28f9ad4",
+            "name" : "Glyph",
+            "slug" : "glyph",
+            "timer" : 60
+         },
+         {
+            "id" : "56fee568-a001-4e1d-8751-931f6bcefd88",
+            "name" : "Grab a Scoop!",
+            "slug" : "grab-a-scoop",
+            "timer" : 60
+         },
+         {
+            "id" : "d1228370-ed2f-4ea4-b24c-6ad25cc20259",
+            "name" : "Hard at Work",
+            "slug" : "hard-at-work",
+            "timer" : 60
+         },
+         {
+            "id" : "31f01a81-c524-4861-b7b9-3749260118fb",
+            "name" : "I HATE YOU!!!",
+            "slug" : "i-hate-you",
+            "timer" : 60
+         },
+         {
+            "id" : "6679dc89-0ec3-4f72-96b6-2e7b7d7f219b",
+            "name" : "Icy Bridge",
+            "slug" : "icy-bridge",
+            "timer" : 90
+         },
+         {
+            "id" : "f92e9091-2cb0-4ee9-9946-35deead9c08f",
+            "name" : "Interwoven",
+            "slug" : "interwoven",
+            "timer" : 60
+         },
+         {
+            "id" : "09fc16f2-4782-4f3e-903f-508926d48904",
+            "name" : "Peel",
+            "slug" : "peel",
+            "timer" : 60
+         },
+         {
+            "id" : "e075e69c-60db-40cb-b0b5-786955e94ebf",
+            "name" : "Quadratic",
+            "slug" : "quadratic",
+            "timer" : 60
+         },
+         {
+            "id" : "c2c01696-ce50-472e-a1cf-6f246e527d2e",
+            "name" : "Sawteeth",
+            "slug" : "sawteeth",
+            "timer" : 60
+         },
+         {
+            "id" : "2e9c4041-9575-42fd-aa5c-68201f9db555",
+            "name" : "Skate Tricks",
+            "slug" : "skate-tricks",
+            "timer" : 60
+         },
+         {
+            "id" : "3314883a-e86e-4644-ab8a-bfe831f7f40f",
+            "name" : "Skating",
+            "slug" : "skating",
+            "timer" : 60
+         },
+         {
+            "id" : "a1376f08-95dd-483f-8d9f-be177c08ef2c",
+            "name" : "Steering Wheel",
+            "slug" : "steering-wheel",
+            "timer" : null
+         },
+         {
+            "id" : "0997a326-7f49-40ef-9d94-a603a5cabd5e",
+            "name" : "Symmetry",
+            "slug" : "symmetry",
+            "timer" : 60
+         },
+         {
+            "id" : "bab7c051-1b2d-467d-bc0f-94a6ef4f9bb8",
+            "name" : "Tendons",
+            "slug" : "tendons",
+            "timer" : 60
+         },
+         {
+            "id" : "df4bd10c-ecde-4669-b7ec-05c4f78f7b39",
+            "name" : "Tendrils",
+            "slug" : "tendrils",
+            "timer" : 60
+         },
+         {
+            "id" : "92586a0b-6be5-4adf-9358-bc4544ea3cd6",
+            "name" : "Twin Inversion",
+            "slug" : "twin-inversion",
+            "timer" : 60
+         },
+         {
+            "id" : "232ac382-df3a-4895-92bd-61f03075cc0c",
+            "name" : "Vert",
+            "slug" : "vert",
+            "timer" : 90
+         },
+         {
+            "id" : "7c77d854-d404-4658-bd8d-e1f504a8aba2",
+            "name" : "Walkways",
+            "slug" : "walkways",
+            "timer" : 60
+         },
+         {
+            "id" : "f1b5bd07-0ab5-4001-8a7f-18271bfeab9a",
+            "name" : "What Goes Up",
+            "slug" : "what-goes-up",
+            "timer" : 60
+         }
+      ]
+   },
+   {
+      "code" : "HG",
+      "name" : "Haunted Grounds",
+      "slug" : "haunted-grounds",
+      "stages" : [
+         {
+            "id" : "9170a72e-e72f-4cc4-b012-756828b9d286",
+            "name" : "Archway",
+            "slug" : "archway",
+            "timer" : 60
+         },
+         {
+            "id" : "5ad1ff97-add6-43a0-aa23-2915649686a5",
+            "name" : "Crosshair",
+            "slug" : "crosshair",
+            "timer" : null
+         },
+         {
+            "id" : "b76c3fb1-8ac9-40e6-954f-add18175ac6f",
+            "name" : "Cut Floors",
+            "slug" : "cut-floors",
+            "timer" : 120
+         },
+         {
+            "id" : "5c93d30a-9a1d-4d89-bf59-1081e19ae4d0",
+            "name" : "Elevators",
+            "slug" : "elevators",
+            "timer" : null
+         },
+         {
+            "id" : "ef7d0849-4c66-4aaa-88c9-635a38d9813c",
+            "name" : "Hidden Links",
+            "slug" : "hidden-links",
+            "timer" : null
+         },
+         {
+            "id" : "51d374b4-ea86-4230-8e0b-c9bd63309d8f",
+            "name" : "Levels",
+            "slug" : "levels",
+            "timer" : 60
+         },
+         {
+            "id" : "581c4e83-06fc-4c03-a85f-d5ec9036cf13",
+            "name" : "Mobile Maze",
+            "slug" : "mobile-maze",
+            "timer" : 30
+         },
+         {
+            "id" : "7a91ca92-fca4-48ac-899d-c63c21c22e98",
+            "name" : "Rubies",
+            "slug" : "rubies",
+            "timer" : 60
+         },
+         {
+            "id" : "605c1067-320f-437f-b306-7182b32b509e",
+            "name" : "Safe Zones",
+            "slug" : "safe-zones",
+            "timer" : 60
+         },
+         {
+            "id" : "1ca713c1-e150-4f8c-a160-05bcda069634",
+            "name" : "Scootin' Scaffolding",
+            "slug" : "scootin-scaffolding",
+            "timer" : 60
+         },
+         {
+            "id" : "664533d7-8f61-4943-bce5-7505dcdba8f8",
+            "name" : "Slopeup",
+            "slug" : "slopeup",
+            "timer" : null
+         },
+         {
+            "id" : "0691365b-f65c-4fe2-915c-a7d93639bbd0",
+            "name" : "Spinner",
+            "slug" : "spinner",
+            "timer" : 60
+         },
+         {
+            "id" : "fda93f22-f82e-4d90-8de4-f2adf5bead34",
+            "name" : "Stairing",
+            "slug" : "stairing",
+            "timer" : 60
+         },
+         {
+            "id" : "0449b939-44b6-4400-b75f-ec0fd5773bdf",
+            "name" : "The Cannonball Loop",
+            "slug" : "the-cannonball-loop",
+            "timer" : 60
+         },
+         {
+            "id" : "9d6b551b-8223-4389-a58f-20708ec379ce",
+            "name" : "Toss",
+            "slug" : "toss",
+            "timer" : 60
+         }
+      ]
+   },
+   {
+      "code" : "HC",
+      "name" : "Heavenly Chamber",
+      "slug" : "heavenly-chamber",
+      "stages" : [
+         {
+            "id" : "c96e1463-da4a-4a29-92c6-65315565dbfe",
+            "name" : "Alternation",
+            "slug" : "alternation",
+            "timer" : null
+         },
+         {
+            "id" : "fa0c3a83-ddb7-47a5-bad4-9c98abe83eff",
+            "name" : "Back & Forth",
+            "slug" : "back-and-forth",
+            "timer" : 60
+         },
+         {
+            "id" : "f5deb79e-ae9c-4412-a524-10f048d1f00b",
+            "name" : "Blossom",
+            "slug" : "blossom",
+            "timer" : 60
+         },
+         {
+            "id" : "07a85d16-568c-4d9d-b190-8546f567bbff",
+            "name" : "Boas",
+            "slug" : "boas",
+            "timer" : 60
+         },
+         {
+            "id" : "0f98450d-2588-468a-9f9b-c108ffe52a25",
+            "name" : "Boomerang",
+            "slug" : "boomerang",
+            "timer" : 60
+         },
+         {
+            "id" : "e39555c8-ab73-4f8d-9b80-f95a841d4163",
+            "name" : "Crossover",
+            "slug" : "crossover",
+            "timer" : 60
+         },
+         {
+            "id" : "a15e269d-1803-447f-bfd2-0188fc041bf7",
+            "name" : "Crushcheck",
+            "slug" : "crushcheck",
+            "timer" : 60
+         },
+         {
+            "id" : "6f74c174-18a2-4bc2-81b2-0f79d5cf5fd6",
+            "name" : "Dipped Wires",
+            "slug" : "dipped-wires",
+            "timer" : 60
+         },
+         {
+            "id" : "146a2e65-b659-4172-9186-1713b892c081",
+            "name" : "Freestyler",
+            "slug" : "freestyler",
+            "timer" : 60
+         },
+         {
+            "id" : "637158ba-f860-44a7-beee-9f3f44d531ad",
+            "name" : "Future Time",
+            "slug" : "future-time",
+            "timer" : 60
+         },
+         {
+            "id" : "a22fe062-7d92-4f8d-85ba-b6a30d8ff821",
+            "name" : "Galaxy",
+            "slug" : "galaxy",
+            "timer" : 90
+         },
+         {
+            "id" : "e88d6a31-2316-43d0-a0a9-125a16e737d3",
+            "name" : "Gyroscopic",
+            "slug" : "gyroscopic",
+            "timer" : 60
+         },
+         {
+            "id" : "7e652bb1-c14d-4f2a-a543-a7c9ed37b2af",
+            "name" : "Hourglasses",
+            "slug" : "hourglasses",
+            "timer" : 60
+         },
+         {
+            "id" : "b4629d58-bdbb-404d-8d08-44f2fcf22b66",
+            "name" : "Lonely Landings",
+            "slug" : "lonely-landings",
+            "timer" : 120
+         },
+         {
+            "id" : "bc5bef5c-b97c-4204-933c-b41a833f4a87",
+            "name" : "Magic Carpet",
+            "slug" : "magic-carpet",
+            "timer" : 60
+         },
+         {
+            "id" : "3e515570-8140-4fbb-b714-969d7146b3c8",
+            "name" : "Neapolitan",
+            "slug" : "neapolitan",
+            "timer" : 90
+         },
+         {
+            "id" : "be9b7611-07ae-4ab1-8c01-b6bc15eab2aa",
+            "name" : "Platbohrms",
+            "slug" : "platbohrms",
+            "timer" : 60
+         },
+         {
+            "id" : "2019895e-b14f-4443-b72c-45772b58296f",
+            "name" : "Ring Bump",
+            "slug" : "ring-bump",
+            "timer" : null
+         },
+         {
+            "id" : "f651313f-9731-46cd-893e-e13fb48c186a",
+            "name" : "Roiling",
+            "slug" : "roiling",
+            "timer" : 60
+         },
+         {
+            "id" : "6ce30383-09da-431b-8de7-ae4cf607fd23",
+            "name" : "Scary Fall",
+            "slug" : "scary-fall",
+            "timer" : 60
+         },
+         {
+            "id" : "20b67f69-20dd-496f-a72f-f9e5b2f92cf0",
+            "name" : "Shapewalk",
+            "slug" : "shapewalk",
+            "timer" : 60
+         },
+         {
+            "id" : "f0a9a697-d0e0-47a0-8116-5b57cb1758bb",
+            "name" : "Sunken Wire",
+            "slug" : "sunken-wire",
+            "timer" : 60
+         },
+         {
+            "id" : "427f4b79-c6da-41c6-bff2-3dd5d0cabfa2",
+            "name" : "Superslide",
+            "slug" : "superslide",
+            "timer" : 120
+         },
+         {
+            "id" : "b0c0850d-7b15-4bd1-8786-6611ae022834",
+            "name" : "Swervy Pistons",
+            "slug" : "swervy-pistons",
+            "timer" : 60
+         },
+         {
+            "id" : "8140d1fe-c8a8-40a4-bb6d-02d7a685c085",
+            "name" : "Swiss Cheese",
+            "slug" : "swiss-cheese",
+            "timer" : 60
+         },
+         {
+            "id" : "9b963b9a-acd9-4c72-a354-d99a7d9355f1",
+            "name" : "Teacups",
+            "slug" : "teacups",
+            "timer" : 60
+         },
+         {
+            "id" : "8ecfe994-2ad4-4647-9346-efb71c830f0a",
+            "name" : "Trampoline Run",
+            "slug" : "trampoline-run",
+            "timer" : null
+         },
+         {
+            "id" : "98332737-3964-4631-acde-6f8a735cbacc",
+            "name" : "Treacherous Tightropes",
+            "slug" : "treacherous-tightropes",
+            "timer" : 60
+         },
+         {
+            "id" : "c051bac3-6d8b-471f-88a2-b3bbff340096",
+            "name" : "Unboxing",
+            "slug" : "unboxing",
+            "timer" : 60
+         },
+         {
+            "id" : "34846d8c-d3fc-406c-b87a-b10908e66035",
+            "name" : "Whiffleball Mania",
+            "slug" : "whiffleball-mania",
+            "timer" : 60
+         }
+      ]
+   },
+   {
+      "code" : "De",
+      "name" : "Desolation",
+      "slug" : "desolation",
+      "stages" : [
+         {
+            "id" : "71b7d2d9-3c4e-4f37-aa12-690998855eb7",
+            "name" : "Corner To Corner",
+            "slug" : "corner-to-corner",
+            "timer" : 60
+         },
+         {
+            "id" : "d988964d-44a4-473b-8302-cf51c43ed563",
+            "name" : "Culmination",
+            "slug" : "culmination",
+            "timer" : 70
+         },
+         {
+            "id" : "d9f8f64d-11a4-473b-8302-cf51c43ed563",
+            "name" : "Desolation Goalpost Test",
+            "slug" : "desolation-goalpost-test",
+            "timer" : 70
+         },
+         {
+            "id" : "6684dd37-ff27-462b-adb8-0388d5ef3338",
+            "name" : "Gyro Engine",
+            "slug" : "gyro-engine",
+            "timer" : 60
+         },
+         {
+            "id" : "90a62495-5669-48b1-b98d-81f4117a2422",
+            "name" : "Planeswalking",
+            "slug" : "planeswalking",
+            "timer" : 90
+         },
+         {
+            "id" : "d7be09bb-157e-4567-8c37-f4c6418daa19",
+            "name" : "Silly Structure",
+            "slug" : "silly-structure",
+            "timer" : 80
+         },
+         {
+            "id" : "c16bd346-a9b1-4480-9464-bcba970809b1",
+            "name" : "The Cure",
+            "slug" : "the-cure",
+            "timer" : 80
+         },
+         {
+            "id" : "c1787061-6e16-4e34-acfa-42037e834e68",
+            "name" : "Wire To You",
+            "slug" : "wire-to-you",
+            "timer" : 90
+         }
+      ]
+   },
+   {
+      "code" : "Vo",
+      "name" : "Vortex",
+      "slug" : "vortex",
+      "stages" : [
+         {
+            "id" : "c0dbbc35-e2a5-448e-ad87-be6cf26cd073",
+            "name" : "Bent Cards",
+            "slug" : "bent-cards",
+            "timer" : 30
+         },
+         {
+            "id" : "4065e69b-fc78-42fa-8582-89d54b624c4a",
+            "name" : "Blades",
+            "slug" : "blades",
+            "timer" : 50
+         },
+         {
+            "id" : "15720cfd-d727-4ec3-a85f-e5ebd657013a",
+            "name" : "Centripetal Jumps",
+            "slug" : "centripetal-jumps",
+            "timer" : 30
+         },
+         {
+            "id" : "3a02db5d-55f1-4f91-ae41-525a6d09629b",
+            "name" : "Clip This",
+            "slug" : "clip-this",
+            "timer" : 60
+         },
+         {
+            "id" : "dc44a6e8-9c3a-471b-9565-134579f608fd",
+            "name" : "Decomposition",
+            "slug" : "decomposition",
+            "timer" : 50
+         },
+         {
+            "id" : "afb2f0ce-ce4a-4664-ab15-b5b94b5fc431",
+            "name" : "Diving Wire",
+            "slug" : "diving-wire",
+            "timer" : 60
+         },
+         {
+            "id" : "2fdf54ac-e992-4125-9613-60f618396764",
+            "name" : "Double Helix",
+            "slug" : "double-helix",
+            "timer" : 60
+         },
+         {
+            "id" : "fe81a55d-0048-4236-a5f6-9f4917f1d6fa",
+            "name" : "Fishbones",
+            "slug" : "fishbones",
+            "timer" : 60
+         },
+         {
+            "id" : "6422dc44-5ba9-429e-bb28-f18da788ee89",
+            "name" : "Fliparound",
+            "slug" : "fliparound",
+            "timer" : 60
+         },
+         {
+            "id" : "39df85bd-9606-46f9-a08a-14fffb833879",
+            "name" : "Frame of Reference",
+            "slug" : "frame-of-reference",
+            "timer" : 90
+         },
+         {
+            "id" : "8f28e181-2098-4506-bebf-833aa6e5124e",
+            "name" : "Frames",
+            "slug" : "frames",
+            "timer" : 60
+         },
+         {
+            "id" : "8a51790a-99e1-4a17-8e42-565f76fd45c7",
+            "name" : "Hook",
+            "slug" : "hook",
+            "timer" : 60
+         },
+         {
+            "id" : "82f1f274-bbdb-401a-ab6e-dc0bc5a7049d",
+            "name" : "Ledgehopper",
+            "slug" : "ledgehopper",
+            "timer" : 60
+         },
+         {
+            "id" : "07b5422e-4ab0-4d00-8080-1e1d12f0c695",
+            "name" : "Linkspin",
+            "slug" : "linkspin",
+            "timer" : 60
+         },
+         {
+            "id" : "9f17b5cb-bad3-4c65-889a-00fcf596c09c",
+            "name" : "Little Seesaws",
+            "slug" : "little-seesaws",
+            "timer" : 60
+         },
+         {
+            "id" : "beec2c6e-1ba9-480d-a28e-65bd01587771",
+            "name" : "Mobius Donut",
+            "slug" : "mobius-donut",
+            "timer" : 30
+         },
+         {
+            "id" : "d0645043-4d4f-41b2-8ee1-8fa71cae4f9f",
+            "name" : "Perpetual Passage",
+            "slug" : "perpetual-passage",
+            "timer" : 60
+         },
+         {
+            "id" : "fea86c73-b79a-4d6a-a214-a21b6852744e",
+            "name" : "Planet Hopping",
+            "slug" : "planet-hopping",
+            "timer" : 40
+         },
+         {
+            "id" : "df22b331-136f-4659-8c98-6cc2f1a02042",
+            "name" : "Ringravity",
+            "slug" : "ringravity",
+            "timer" : 50
+         },
+         {
+            "id" : "e3fa764a-9efc-4f8b-b400-5985937cd6ba",
+            "name" : "Rolling Coil",
+            "slug" : "rolling-coil",
+            "timer" : 60
+         },
+         {
+            "id" : "bff31283-87da-4c6b-b60c-85acc7539f8c",
+            "name" : "Serpent",
+            "slug" : "serpent",
+            "timer" : 60
+         },
+         {
+            "id" : "07e37b78-02f7-41f4-91d9-26166fa102b3",
+            "name" : "Slinky",
+            "slug" : "slinky",
+            "timer" : 40
+         },
+         {
+            "id" : "3f0635a1-b616-4e3f-8eb5-9dc8060403d7",
+            "name" : "Turning Wire",
+            "slug" : "turning-wire",
+            "timer" : 25
+         },
+         {
+            "id" : "02a37ce5-a499-4873-9b48-a11edfb0e558",
+            "name" : "Twirler",
+            "slug" : "twirler",
+            "timer" : 60
+         },
+         {
+            "id" : "dc2d06ee-bdd0-4264-b462-afdb05f14090",
+            "name" : "Unsteady Checkers",
+            "slug" : "unsteady-checkers",
+            "timer" : 40
+         },
+         {
+            "id" : "81d104df-8b99-446f-afa9-d0f6c8237e1a",
+            "name" : "Whirling Wires",
+            "slug" : "whirling-wires",
+            "timer" : 30
+         }
+      ]
+   }
+]

@@ -1,0 +1,282 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root {
+    --black:  #41175c;
+    --blue:   #04f;
+    --grey:   #eee;
+    --pink:   #dc58fd;
+    --purple: #6a6ec7;
+    --white:  #fff;
+    --yellow: #fffbb4;
+
+    --max-width: 45rem;
+}
+
+/* Keep the rem at 16px but set the body/form font size to 18px */
+:root { font: 16px system-ui, -apple-system, sans-serif }
+body, button, input, option, select { font-size: 18px }
+
+a { color: var(--blue) }
+
+a:not(:hover) { text-decoration: none }
+
+a:has(img) {
+    align-items: center;
+    display: flex;
+    gap: .375rem;
+
+    > img { width: 1rem }
+
+    > span {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+body {
+    background: var(--yellow);
+    color: var(--black);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin: auto;
+    max-width: var(--max-width);
+    padding: 0 1rem 1rem;
+}
+
+body > select { font-weight: bold }
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+}
+
+form button {
+    background: var(--purple);
+    border: 1px solid var(--black);
+    color: var(--white);
+    cursor: pointer;
+    font-weight: bold;
+    padding: .25rem .5rem;
+}
+
+form button:hover { background: var(--pink) }
+
+h1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+header {
+    background: var(--purple);
+    margin: 0 calc(50% - 50vw);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    margin: auto;
+    max-width: var(--max-width);
+}
+
+nav a {
+    color: var(--white);
+    flex: 1;
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 3rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:is(.on, :hover) { background: var(--pink) }
+
+select {
+    background: var(--white);
+    border: 1px solid var(--black);
+    padding: .5rem;
+}
+
+summary {
+    cursor: pointer;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+table {
+    border-spacing: 0;
+    font-variant: tabular-nums;
+}
+
+tbody { background: var(--white) }
+
+td {
+    border: 0 solid var(--black);
+    border-width: 0 1px 1px 0;
+}
+
+td:first-child { border-left-width: 1px }
+
+td, th {
+    padding: .25rem .5rem;
+    text-align: left;
+    white-space: nowrap;
+}
+
+tr:nth-child(even) { background: #f6f6ff }
+
+thead th {
+    background: var(--yellow);
+    border-bottom: 2px solid var(--black);
+    position: sticky;
+    top: 3rem;
+
+    > button {
+        background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'><path d='M2 0L0 2h4zm0 5L0 3h4' fill='%23bbb'/></svg>") left center / .675rem no-repeat;
+        border: 0;
+        color: var(--black);
+        cursor: pointer;
+        font-weight: bold;
+        padding: 0 0 0 1rem;
+
+        &.asc {
+            background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'><path d='M2,5 0,3h4' fill='%23bbb'/><path d='M2,0 0,2h4z' fill='%2341175c'/></svg>");
+        }
+
+        &.desc {
+            background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'><path d='M2,5 0,3h4' fill='%2341175c'/><path d='M2,0 0,2h4z' fill='%23bbb'/></svg>");
+        }
+    }
+}
+
+td.right > .badges { justify-content: flex-end }
+
+.badges {
+    display: flex;
+    gap: .5rem;
+}
+
+.badges > :not(span) {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.badges > span {
+    align-items: center;
+    border-radius: .25rem;
+    display: flex;
+    font-weight: bold;
+    padding: .125rem .25rem;
+}
+
+td > .badges > span { font-size: .75rem }
+
+.goal-green { background: #198754; color: var(--white) }
+.goal-red   { background: #dc3545; color: var(--white) }
+
+/* Used on the /grid experiment, might end up deleting */
+.icons {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(6.75rem, 1fr));
+    padding-top: 1rem;
+}
+
+.icon {
+    aspect-ratio: 1;
+    background: grey;
+    border: 2px solid #000;
+    border-radius: 1rem;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+}
+
+.icon > div {
+    background: #000a;
+    bottom: 0;
+    color: #fff;
+    font-size: .75rem;
+    font-weight: bold;
+    overflow: hidden;
+    padding: .25rem;
+    position: absolute;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.icon:hover     { border-color: var(--purple) }
+.icon:hover > div { background: var(--purple) }
+
+.overflow-first  td:nth-child(1),
+.overflow-second td:nth-child(2) {
+    max-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;
+}
+
+.overflow-first-second td:nth-child(-n+2) {
+    max-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 50%;
+}
+
+.table-35-15-auto-auto-50 td:nth-child(1),
+.table-35-15-auto-auto-50 td:nth-child(2),
+.table-35-15-auto-auto-50 td:nth-child(5) {
+    max-width: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.table-35-15-auto-auto-50 td:nth-child(1) { width: 35% }
+.table-35-15-auto-auto-50 td:nth-child(2) { width: 15% }
+.table-35-15-auto-auto-50 td:nth-child(5) { width: 50% }
+
+/* Ensure rank columns are the same width even with fewer than 100 clears */
+/* Enough space for "100" plus  0.5rem padding each side */
+td.rank-1 { min-width: calc(3ch + 1rem) }
+
+.rank-1 { background: linear-gradient(90deg, #ffc107 0, #d39e00) }
+.rank-2 { background: linear-gradient(90deg, #ced4da 0, #b1bbc4) }
+.rank-3 { background: linear-gradient(90deg, #fd7e14 0, #dc6502) }
+
+/* Replace table cell podium ranks with images, keep text for copy paste. */
+td.rank-1 { background: url(../img/gold.png) center / 1.5rem no-repeat,
+                        linear-gradient(90deg, #ffc107 0, #d39e00) !important;
+                 color: transparent }
+td.rank-2 { background: url(../img/silver.png) center / 1.5rem no-repeat,
+                        linear-gradient(90deg, #ced4da 0, #b1bbc4) !important;
+                 color: transparent }
+td.rank-3 { background: url(../img/bronze.png) center / 1.5rem no-repeat,
+                        linear-gradient(90deg, #fd7e14 0, #dc6502) !important;
+                 color: transparent }
+
+.center { text-align: center }
+.right  { text-align: right }
+
+.thin { display: none }
+
+#videoForm > :not(button) {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Give the admin page a bit more room */
+:root:has(#videoForm) { --max-width: 60rem }
+
+@media (max-width: 38rem) {
+    .thin { display: initial }
+    .wide { display: none }
+}

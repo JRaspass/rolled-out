@@ -1,0 +1,80 @@
+{{ template "head.html" . }}
+
+<select autofocus>
+    <option value=/>Overall
+{{ range $i, $w := .Worlds }}
+    <optgroup label="{{ $w.Name }}">
+        <option value="/{{ $w.Slug }}"
+            {{- if and $.Data.World (eq $.Data.World.Slug $w.Slug) -}}
+                {{/* */}} selected
+            {{- end -}}
+        >All Stages ({{ $w.Name }})
+    {{ range $i, $s := .Stages }}
+        <option value="/{{ $w.Slug }}/{{ $s.Slug }}"
+            {{- if and $.Data.Stage (eq $.Data.Stage.ID $s.ID) -}}
+                {{/* */}} selected
+            {{- end -}}
+        >{{ $s.Name }}
+    {{ end }}
+{{ end }}
+</select>
+
+<table class=overflow-second>
+    <thead>
+        <tr>
+            <th class=center title=Rank>#
+            <th>Player
+        {{ if .Data.Stage }}
+            <th class=right>Time
+            <th class="right wide">Δ ms
+            <th class=right>Points
+            <th class="right wide">Date
+        {{ else }}
+            <th class=right>Stages
+            <th class="right wide" title="Mean Average Rank">µ Rank
+            <th class="right wide" title="Total Time Taken">Σ Time
+            <th class=right title="Total Points">Points
+        {{ end }}
+    <tbody>
+    {{ $lastTime := "" }}
+    {{ range .Data.Rows }}
+        <tr>
+            <td class="center rank-{{ .Rank }}">{{ .Rank }}
+            <td>
+                <div class=badges>
+                    <a href="/players/{{ path .Player }}">{{ .Player }}</a>
+                {{ if and .Goal (ne .Goal "Blue") }}
+                    <span class="goal-{{ lower .Goal }}">{{ .Goal }}</span>
+                {{ end }}
+                </div>
+        {{ if $.Data.Stage }}
+            <td class=right>
+            {{ if .VideoURL }}
+                <a href="{{ .VideoURL }}" target=_blank>
+                    {{ time_sec .TimeRemaining }}
+                </a>
+            {{ else }}
+                {{ time_sec .TimeRemaining }}
+            {{ end }}
+            <td class="right wide">
+            {{ if $lastTime }}
+                {{ comma (delta $lastTime .TimeRemaining) }}
+            {{ else }}
+                0
+            {{ end }}
+            {{ $lastTime = .TimeRemaining }}
+            <td class=right>
+                {{ if ne .Clear 1 }}
+                    <s>{{ comma .Points }}</s>
+                {{ else }}
+                    {{ comma .Points }}
+                {{ end }}
+            <td class="right wide">{{ date .Date }}
+        {{ else }}
+            <td class=right>{{ .Stages }}
+            <td class="right wide">{{ .AvgRank }}
+            <td class="right wide">{{ time_min_sec .TimeTaken }}
+            <td class=right>{{ comma .Points }}
+        {{ end }}
+    {{ end }}
+</table>

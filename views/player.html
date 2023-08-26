@@ -1,0 +1,93 @@
+{{ template "head.html" . }}
+
+<h1>{{ .Data.Player }}</h1>
+
+<div class=badges>
+    <span class=rank-1>{{ .Data.Golds   }}</span>
+    <span class=rank-2>{{ .Data.Silvers }}</span>
+    <span class=rank-3>{{ .Data.Bronzes }}</span>
+</div>
+
+<form method=post>
+{{ if .Data.HideAdditional }}
+    <button name=action value=show_additional>Show Additional Clears</button>
+{{ else }}
+    <button name=action value=hide_additional>Hide Additional Clears</button>
+{{ end }}
+
+{{ if .Data.HideIncomplete }}
+    <button name=action value=show_incomplete>Show Incomplete Stages</button>
+{{ else }}
+    <button name=action value=hide_incomplete>Hide Incomplete Stages</button>
+{{ end }}
+</form>
+
+<table class="overflow-first sort">
+    <thead>
+        <tr>
+            <th>
+                <button class=asc>Stage</button>
+            <th class=center>
+                <button>Rank</button>
+            <th class=center>
+                <button>Time</button>
+            <th class=center>
+                <button>Points</button>
+            <th class="center wide">
+                <button>Date</button>
+    <tbody>
+{{ $i := 0 }}
+{{ range $j, $w := .Worlds }}
+    {{ range $j, $s := $w.Stages }}
+        {{ range $j, $r := index $.Data.Runs $s.ID }}
+            {{ if and $.Data.HideAdditional (ne .Clear 1) }}{{ continue }}{{ end }}
+            <tr>
+                <td data-sort="{{ $i }}{{ $i = inc $i }}">
+                    <div class=badges>
+                        <div>
+                            <a class=wide href="/{{ $w.Slug }}">{{ $w.Name }}</a>
+                            <a class=thin href="/{{ $w.Slug }}">{{ $w.Code }}</a>
+                            /
+                            <a href="/{{ $w.Slug }}/{{ $s.Slug }}">{{ $s.Name }}</a>
+                        </div>
+                    {{ if ne .Goal "Blue" }}
+                        <span class="goal-{{ lower .Goal }}">{{ .Goal }}</span>
+                    {{ end }}
+                    </div>
+                <td class="center rank-{{ .Rank }}" data-sort="{{ .Rank }}">
+                    {{ .Rank }}
+                <td class=right data-sort="{{ .TimeRemaining.Milliseconds }}">
+                {{ if .VideoURL }}
+                    <a href="{{ .VideoURL }}" target=_blank>
+                        {{ time_sec .TimeRemaining }}
+                    </a>
+                {{ else }}
+                    {{ time_sec .TimeRemaining }}
+                {{ end }}
+                <td class=right data-sort="{{ .Points }}">
+                    {{ if ne .Clear 1 }}
+                        <s>{{ comma .Points }}</s>
+                    {{ else }}
+                        {{ comma .Points }}
+                    {{ end }}
+                <td class="right wide" data-sort="{{ .Date.Unix }}">
+                    {{ date .Date }}
+        {{ else }}{{ if not $.Data.HideIncomplete }}
+            <tr>
+                <td data-sort="{{ $i }}{{ $i = inc $i }}">
+                    <div class=badges>
+                        <div>
+                            <a class=wide href="/{{ $w.Slug }}">{{ $w.Name }}</a>
+                            <a class=thin href="/{{ $w.Slug }}">{{ $w.Code }}</a>
+                            /
+                            <a href="/{{ $w.Slug }}/{{ $s.Slug }}">{{ $s.Name }}</a>
+                        </div>
+                    </div>
+                <td>
+                <td>
+                <td>
+                <td class=wide>
+        {{ end }}{{ end }}
+    {{ end }}
+{{ end }}
+</table>
