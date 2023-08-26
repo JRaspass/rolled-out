@@ -10,8 +10,8 @@ use Path::Tiny;
 # convert xxx.jpg -resize "200^>" -gravity center -crop 200x200+0+0 xxx.jpg
 my @worlds = map { code => code($_), name => $_, slug => slug($_) }, (
     'Tranquility', 'Desert Ruins', 'Candy Factory', 'Foggy Mountains',
-    'Virtual Reality', 'Ice Cave', 'Haunted Grounds', 'Heavenly Chamber',
-    'Desolation', 'Vortex',
+    'Virtual Reality', 'Ice Cave', 'Volcano', 'Haunted Grounds',
+    'Heavenly Chamber', 'Desolation', 'Vortex',
 );
 
 my %bg2world = (
@@ -23,10 +23,11 @@ my %bg2world = (
     GothicMap       => $worlds[3],  # Foggy Mountains
     VRMap           => $worlds[4],  # Virtual Reality
     IceCaveMap      => $worlds[5],  # Ice Cave
-    SpookyMap       => $worlds[6],  # Haunted Grounds
-    ExtraMap        => $worlds[7],  # Heavenly Chamber
-    DesolationMap   => $worlds[8],  # Desolation
-    MasterMap       => $worlds[9],  # Vortex
+    VolcanoMap      => $worlds[6],  # Volcano
+    SpookyMap       => $worlds[7],  # Haunted Grounds
+    ExtraMap        => $worlds[8],  # Heavenly Chamber
+    DesolationMap   => $worlds[9],  # Desolation
+    MasterMap       => $worlds[10], # Vortex
 );
 
 # Find all the stage config files in the Steam directory.
@@ -65,6 +66,9 @@ path('model/worlds.json')->spew(
 # Tranquility  → Tr
 # Desert Ruins → DR
 sub code($name) {
+    return 'Vol' if $name eq 'Volcano';
+    return 'Vor' if $name eq 'Vortex';
+
     return join( '', $name =~ /([A-Z]).+([A-Z])/ ) || $name =~ /(..)/;
 }
 

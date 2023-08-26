@@ -233,9 +233,21 @@
             "timer" : 60
          },
          {
+            "id" : "d21b2ca0-79d1-4365-a450-fd7e35e694bf",
+            "name" : "Rockin' Holes",
+            "slug" : "rockin-holes",
+            "timer" : 60
+         },
+         {
             "id" : "2658eb9f-4e2e-4e60-aadd-7eb0553ac034",
             "name" : "Rollers",
             "slug" : "rollers",
+            "timer" : 60
+         },
+         {
+            "id" : "e848dd7d-7efd-4d65-8300-6834830afdce",
+            "name" : "Scaling Test",
+            "slug" : "scaling-test",
             "timer" : 60
          },
          {
@@ -402,6 +414,12 @@
             "timer" : 60
          },
          {
+            "id" : "afeadc12-02d2-4ad9-9b38-d2ab16ba5674",
+            "name" : "Forgotten Path",
+            "slug" : "forgotten-path",
+            "timer" : 60
+         },
+         {
             "id" : "b7eca962-34b6-4a99-a07f-e5f2f8df1c85",
             "name" : "Fractured",
             "slug" : "fractured",
@@ -435,6 +453,12 @@
             "id" : "03f1c720-df14-4ed5-8deb-269e6cc53fc1",
             "name" : "Jumpy Options",
             "slug" : "jumpy-options",
+            "timer" : 60
+         },
+         {
+            "id" : "85986323-e1c7-495d-8bdd-5740155256e3",
+            "name" : "Masks",
+            "slug" : "masks",
             "timer" : 60
          },
          {
@@ -486,10 +510,16 @@
             "timer" : 60
          },
          {
-            "id" : "1b718b36-095e-47a8-85f4-4fbad44cbe5c",
+            "id" : "98da2ff3-6a7d-4da9-a720-37911c4ecfb2",
+            "name" : "Slopeless",
+            "slug" : "slopeless",
+            "timer" : 60
+         },
+         {
+            "id" : "a7baa939-a0d3-4e46-8bca-66bcf1774861",
             "name" : "Snakeway",
             "slug" : "snakeway",
-            "timer" : 120
+            "timer" : 60
          },
          {
             "id" : "02ef33da-3cf5-4ca8-9788-ecfc1b0cb680",
@@ -501,6 +531,12 @@
             "id" : "8eee1586-ac71-4227-96d3-04a16f5947ac",
             "name" : "Squiggly",
             "slug" : "squiggly",
+            "timer" : 60
+         },
+         {
+            "id" : "9ad80df4-1eb2-416c-bb44-d52a986303e3",
+            "name" : "Strategy",
+            "slug" : "strategy",
             "timer" : 60
          },
          {
@@ -751,6 +787,12 @@
             "timer" : 60
          },
          {
+            "id" : "b812d5bb-7730-4ebd-9527-2dfe583ddd62",
+            "name" : "These Donuts Are BONKERS!",
+            "slug" : "these-donuts-are-bonkers",
+            "timer" : 60
+         },
+         {
             "id" : "de95e989-0c7b-4111-9cf7-4fa4a89b0d4a",
             "name" : "Tick Tick",
             "slug" : "tick-tick",
@@ -866,6 +908,12 @@
             "timer" : 30
          },
          {
+            "id" : "543751c5-3c67-4d33-84da-37fd113bd8e9",
+            "name" : "Cut Bumps",
+            "slug" : "cut-bumps",
+            "timer" : 60
+         },
+         {
             "id" : "222d739a-8a64-479f-b810-f8402aa68405",
             "name" : "Destabilizer",
             "slug" : "destabilizer",
@@ -974,6 +1022,12 @@
             "timer" : 60
          },
          {
+            "id" : "9c4ab889-382c-4b80-9b59-fecc4c207844",
+            "name" : "Whisked Away",
+            "slug" : "whisked-away",
+            "timer" : 60
+         },
+         {
             "id" : "284a4195-6faa-4e1c-a84e-988550f6be86",
             "name" : "Windy",
             "slug" : "windy",
@@ -1020,6 +1074,12 @@
             "id" : "5dcd1412-6828-4e79-937e-55d18e861b53",
             "name" : "Buildup",
             "slug" : "buildup",
+            "timer" : 60
+         },
+         {
+            "id" : "0b83e3ab-8446-4e72-bedd-fb243acb02bd",
+            "name" : "Capacitors",
+            "slug" : "capacitors",
             "timer" : 60
          },
          {
@@ -1089,6 +1149,12 @@
             "timer" : 30
          },
          {
+            "id" : "6917d515-8049-459c-989d-88bb766f968e",
+            "name" : "Hideous Hoops",
+            "slug" : "hideous-hoops",
+            "timer" : 60
+         },
+         {
             "id" : "45a672c5-36d9-4cee-bacd-33af6b0988e5",
             "name" : "Inverse",
             "slug" : "inverse",
@@ -1098,6 +1164,12 @@
             "id" : "6373e983-fd4c-46e2-a77f-41ab5dc925d3",
             "name" : "Inward",
             "slug" : "inward",
+            "timer" : 60
+         },
+         {
+            "id" : "abf6050a-bbad-4d37-9136-ff253bd53024",
+            "name" : "It's Alive!",
+            "slug" : "its-alive",
             "timer" : 60
          },
          {
@@ -1336,6 +1408,12 @@
             "timer" : 60
          },
          {
+            "id" : "0021375d-5893-48cc-8d9b-eeab5ce8e1be",
+            "name" : "Keyholes",
+            "slug" : "keyholes",
+            "timer" : 60
+         },
+         {
             "id" : "09fc16f2-4782-4f3e-903f-508926d48904",
             "name" : "Peel",
             "slug" : "peel",
@@ -1370,6 +1448,12 @@
             "name" : "Steering Wheel",
             "slug" : "steering-wheel",
             "timer" : null
+         },
+         {
+            "id" : "e5c0ca04-d8fa-4091-9b16-761e9a856b78",
+            "name" : "Super Happy Fun Time Roll Ball",
+            "slug" : "super-happy-fun-time-roll-ball",
+            "timer" : 60
          },
          {
             "id" : "0997a326-7f49-40ef-9d94-a603a5cabd5e",
@@ -1416,6 +1500,73 @@
       ]
    },
    {
+      "code" : "Vol",
+      "name" : "Volcano",
+      "slug" : "volcano",
+      "stages" : [
+         {
+            "id" : "3a7dd615-d163-4927-93cb-1aa534caee1b",
+            "name" : "Argyle",
+            "slug" : "argyle",
+            "timer" : 60
+         },
+         {
+            "id" : "222f4653-3fad-4aab-bbcd-1dcf8b4e709f",
+            "name" : "Balconies",
+            "slug" : "balconies",
+            "timer" : 60
+         },
+         {
+            "id" : "e6a5250c-de0a-4b5c-87c9-0fc1621826a8",
+            "name" : "Drone",
+            "slug" : "drone",
+            "timer" : 60
+         },
+         {
+            "id" : "735c8bfa-b39d-4f9a-a7b3-f2fa5887a164",
+            "name" : "Flowcones",
+            "slug" : "flowcones",
+            "timer" : 60
+         },
+         {
+            "id" : "f571f015-fe76-45c9-9a82-8911f99df52f",
+            "name" : "Oblong Hops",
+            "slug" : "oblong-hops",
+            "timer" : 60
+         },
+         {
+            "id" : "d6d51987-b349-40f4-a4c2-558bf09510db",
+            "name" : "On The Hinge",
+            "slug" : "on-the-hinge",
+            "timer" : 60
+         },
+         {
+            "id" : "eeeae89f-459a-4b7e-9e16-11ec1e864e27",
+            "name" : "Q",
+            "slug" : "q",
+            "timer" : 60
+         },
+         {
+            "id" : "14b28efd-bfce-432a-8086-36da9dad00e0",
+            "name" : "Ringsen Thingsen",
+            "slug" : "ringsen-thingsen",
+            "timer" : 60
+         },
+         {
+            "id" : "655480e2-64ce-4e78-b52f-936acb94c39d",
+            "name" : "Rollermine",
+            "slug" : "rollermine",
+            "timer" : 60
+         },
+         {
+            "id" : "496b4608-7c89-46c9-99cb-724cea3dc581",
+            "name" : "Sitback",
+            "slug" : "sitback",
+            "timer" : 60
+         }
+      ]
+   },
+   {
       "code" : "HG",
       "name" : "Haunted Grounds",
       "slug" : "haunted-grounds",
@@ -1430,7 +1581,7 @@
             "id" : "5ad1ff97-add6-43a0-aa23-2915649686a5",
             "name" : "Crosshair",
             "slug" : "crosshair",
-            "timer" : null
+            "timer" : 60
          },
          {
             "id" : "b76c3fb1-8ac9-40e6-954f-add18175ac6f",
@@ -1439,16 +1590,52 @@
             "timer" : 120
          },
          {
+            "id" : "20f04e56-167f-4e25-b753-456783c2a829",
+            "name" : "Don't Look Back",
+            "slug" : "dont-look-back",
+            "timer" : 60
+         },
+         {
+            "id" : "8d315e2c-9b8b-45ef-9bd7-2dabcb4c48d2",
+            "name" : "Drum Pedal",
+            "slug" : "drum-pedal",
+            "timer" : 60
+         },
+         {
+            "id" : "d42e4f8c-921d-4e48-b2bc-010e4c007ec4",
+            "name" : "Earthworm",
+            "slug" : "earthworm",
+            "timer" : 60
+         },
+         {
             "id" : "5c93d30a-9a1d-4d89-bf59-1081e19ae4d0",
             "name" : "Elevators",
             "slug" : "elevators",
             "timer" : null
          },
          {
+            "id" : "d42e4d8c-9d1d-4e48-b2bc-030e4c007ec4",
+            "name" : "Foos Errand",
+            "slug" : "foos-errand",
+            "timer" : 60
+         },
+         {
             "id" : "ef7d0849-4c66-4aaa-88c9-635a38d9813c",
             "name" : "Hidden Links",
             "slug" : "hidden-links",
             "timer" : null
+         },
+         {
+            "id" : "5de81ebc-45de-4b68-a74f-5c193fb3f0d4",
+            "name" : "I made this stage for you.",
+            "slug" : "i-made-this-stage-for-you",
+            "timer" : 60
+         },
+         {
+            "id" : "c5cf8442-32d7-494e-9350-2e6faecb504b",
+            "name" : "Kerplunk",
+            "slug" : "kerplunk",
+            "timer" : 60
          },
          {
             "id" : "51d374b4-ea86-4230-8e0b-c9bd63309d8f",
@@ -1493,6 +1680,12 @@
             "timer" : 60
          },
          {
+            "id" : "b9cd9a53-9b20-4688-9b83-22d6e1aa796a",
+            "name" : "Squeeze By",
+            "slug" : "squeeze-by",
+            "timer" : 60
+         },
+         {
             "id" : "fda93f22-f82e-4d90-8de4-f2adf5bead34",
             "name" : "Stairing",
             "slug" : "stairing",
@@ -1502,6 +1695,12 @@
             "id" : "0449b939-44b6-4400-b75f-ec0fd5773bdf",
             "name" : "The Cannonball Loop",
             "slug" : "the-cannonball-loop",
+            "timer" : 60
+         },
+         {
+            "id" : "4f2084dd-56b8-45a9-8ba9-626384b2815e",
+            "name" : "Tight Fit",
+            "slug" : "tight-fit",
             "timer" : 60
          },
          {
@@ -1521,7 +1720,7 @@
             "id" : "c96e1463-da4a-4a29-92c6-65315565dbfe",
             "name" : "Alternation",
             "slug" : "alternation",
-            "timer" : null
+            "timer" : 60
          },
          {
             "id" : "fa0c3a83-ddb7-47a5-bad4-9c98abe83eff",
@@ -1563,7 +1762,7 @@
             "id" : "6f74c174-18a2-4bc2-81b2-0f79d5cf5fd6",
             "name" : "Dipped Wires",
             "slug" : "dipped-wires",
-            "timer" : 60
+            "timer" : 100
          },
          {
             "id" : "146a2e65-b659-4172-9186-1713b892c081",
@@ -1596,6 +1795,18 @@
             "timer" : 60
          },
          {
+            "id" : "19acd1cf-4126-4101-88c8-021a310c3cd1",
+            "name" : "It's all bowls here.",
+            "slug" : "its-all-bowls-here",
+            "timer" : 60
+         },
+         {
+            "id" : "0a439b05-332b-442a-a69b-ac5f55878e41",
+            "name" : "Lanterns",
+            "slug" : "lanterns",
+            "timer" : 60
+         },
+         {
             "id" : "b4629d58-bdbb-404d-8d08-44f2fcf22b66",
             "name" : "Lonely Landings",
             "slug" : "lonely-landings",
@@ -1612,6 +1823,12 @@
             "name" : "Neapolitan",
             "slug" : "neapolitan",
             "timer" : 90
+         },
+         {
+            "id" : "e63ed213-8ac9-4107-bcf0-ca6f17531b72",
+            "name" : "Pills",
+            "slug" : "pills",
+            "timer" : 60
          },
          {
             "id" : "be9b7611-07ae-4ab1-8c01-b6bc15eab2aa",
@@ -1641,6 +1858,12 @@
             "id" : "20b67f69-20dd-496f-a72f-f9e5b2f92cf0",
             "name" : "Shapewalk",
             "slug" : "shapewalk",
+            "timer" : 60
+         },
+         {
+            "id" : "a5702065-031c-4bbb-8d0a-70a2c53be0e0",
+            "name" : "Starfishies",
+            "slug" : "starfishies",
             "timer" : 60
          },
          {
@@ -1692,6 +1915,12 @@
             "timer" : 60
          },
          {
+            "id" : "1446fef1-ea46-444e-8c41-ed1e83abdeaf",
+            "name" : "Wavy Waves",
+            "slug" : "wavy-waves",
+            "timer" : 60
+         },
+         {
             "id" : "34846d8c-d3fc-406c-b87a-b10908e66035",
             "name" : "Whiffleball Mania",
             "slug" : "whiffleball-mania",
@@ -1704,6 +1933,12 @@
       "name" : "Desolation",
       "slug" : "desolation",
       "stages" : [
+         {
+            "id" : "2f138968-98da-4043-83a5-4b73c028e935",
+            "name" : "Broken Apart",
+            "slug" : "broken-apart",
+            "timer" : 60
+         },
          {
             "id" : "71b7d2d9-3c4e-4f37-aa12-690998855eb7",
             "name" : "Corner To Corner",
@@ -1727,6 +1962,12 @@
             "name" : "Gyro Engine",
             "slug" : "gyro-engine",
             "timer" : 60
+         },
+         {
+            "id" : "1a090ece-86f5-4a49-a9fe-4f8d4982ad8f",
+            "name" : "More-bius Strip",
+            "slug" : "more-bius-strip",
+            "timer" : 90
          },
          {
             "id" : "90a62495-5669-48b1-b98d-81f4117a2422",
@@ -1755,10 +1996,16 @@
       ]
    },
    {
-      "code" : "Vo",
+      "code" : "Vor",
       "name" : "Vortex",
       "slug" : "vortex",
       "stages" : [
+         {
+            "id" : "6f9df890-4f10-4442-a3d2-f3199984ccdd",
+            "name" : "Balancing Act",
+            "slug" : "balancing-act",
+            "timer" : 30
+         },
          {
             "id" : "c0dbbc35-e2a5-448e-ad87-be6cf26cd073",
             "name" : "Bent Cards",
