@@ -45,6 +45,11 @@ func scrape(db *sqlx.DB) {
 		}
 		defer res.Body.Close()
 
+		if res.StatusCode != http.StatusOK {
+			log.Println(res.Status, stage.ID, stage.Name)
+			continue
+		}
+
 		doc, err := html.Parse(res.Body)
 		if err != nil {
 			panic(err)
