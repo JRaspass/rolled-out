@@ -23,7 +23,7 @@ a { color: var(--blue) }
 
 a:not(:hover) { text-decoration: none }
 
-a:has(img) {
+td > a:has(img) {
     align-items: center;
     display: flex;
     gap: .375rem;
