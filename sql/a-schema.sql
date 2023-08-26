@@ -23,6 +23,7 @@ CREATE TABLE videos (
 
 CREATE MATERIALIZED VIEW points AS WITH window_funcs AS (
     SELECT *,
+           count(*) OVER (PARTITION BY stage_id),
            min(time_remaining) OVER (PARTITION BY stage_id) min_time_remaining,
            max(time_remaining) OVER (PARTITION BY stage_id) max_time_remaining,
            rank() OVER (PARTITION BY stage_id ORDER BY time_remaining DESC),
@@ -30,10 +31,10 @@ CREATE MATERIALIZED VIEW points AS WITH window_funcs AS (
       FROM runs
 ), points_parts AS (
     SELECT *,
-           floor(
+           CASE count WHEN 1 THEN 750 ELSE floor(
                (    time_remaining - min_time_remaining) /
                (max_time_remaining - min_time_remaining)::decimal * 750
-           ) points_time,
+           ) END points_time,
            CASE WHEN rank =  1 THEN 200
                 WHEN rank =  2 THEN 150
                 WHEN rank =  3 THEN 100
