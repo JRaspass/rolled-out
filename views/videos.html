@@ -11,19 +11,22 @@
     <button>Add</button>
 </form>
 
-<table class=table-35-15-auto-auto-50>
+<table class=table-auto-35-15-auto-auto-50>
     <thead>
         <tr>
+            <th class=right>#
             <th>Stage
             <th>Player
             <th>Rank
             <th class=center>Time
             <th>URL
+            <th>
     <tbody>
     {{ range .Data }}
         {{ $s := .Stage }}
         {{ $w := .Stage.World }}
         <tr>
+            <td class=right>{{ .ID }}
             <td>
                 <div class=badges>
                     <div>
@@ -39,7 +42,9 @@
             <td class=right>{{ time_sec .TimeRemaining }}
             <td>
                 {{ if .VideoTitle }}
-                    <a href="{{ .VideoURL }}" title="{{ .VideoAuthor }} - {{ .VideoTitle }}">
+                    <a href="{{ .VideoURL }}"
+                     target="_blank"
+                      title="{{ .VideoAuthor }} - {{ .VideoTitle }}">
                         {{/* Assume videos with titles are YouTube for now */}}
                         <img src='{{ asset "img/youtube.svg" }}'>
                         <span>{{ .VideoAuthor }} - {{ .VideoTitle }}</span>
@@ -47,5 +52,9 @@
                 {{ else }}
                     <a href="{{ .VideoURL }}">{{ .VideoURL }}</a>
                 {{ end }}
+            <td>
+                <a href="/videos/{{ .ID }}/delete">
+                    <img src='{{ asset "img/trash.svg" }}'>
+                </a>
     {{ end }}
 </table>

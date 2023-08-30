@@ -11,6 +11,7 @@ CREATE TABLE runs (
 );
 
 CREATE TABLE videos (
+    id             serial NOT NULL PRIMARY KEY,
     stage_id       uuid   NOT NULL,
     goal           goal   NOT NULL,
     player         text   NOT NULL,
@@ -18,7 +19,7 @@ CREATE TABLE videos (
     video_author   text,
     video_title    text,
     video_url      text   NOT NULL UNIQUE,
-    PRIMARY KEY (stage_id, goal, player)
+    UNIQUE (stage_id, goal, player)
 );
 
 CREATE MATERIALIZED VIEW points AS WITH window_funcs AS (
@@ -55,3 +56,5 @@ CREATE ROLE "rolled-out" WITH LOGIN;
 ALTER MATERIALIZED VIEW points OWNER TO "rolled-out";
 
 GRANT SELECT, INSERT, DELETE ON TABLE runs, videos TO "rolled-out";
+
+GRANT USAGE, SELECT ON ALL SEQUENCES IN SCHEMA public to "rolled-out";

@@ -26,11 +26,25 @@ func PlayerRuns(db *sqlx.DB, player string) (runs []Run, err error) {
 	return
 }
 
+func GetVideo(db *sqlx.DB, id string) (*Video, error) {
+	var video Video
+	err := db.Get(
+		&video,
+		`  SELECT goal, id, player, rank, stage_id, time_remaining,
+		          video_author, video_title, video_url
+		     FROM videos
+		LEFT JOIN points USING (stage_id, goal, player, time_remaining)
+		    WHERE id = $1`,
+		id,
+	)
+	return &video, err
+}
+
 func Videos(db *sqlx.DB) (videos []Video, err error) {
 	err = db.Select(
 		&videos,
-		`  SELECT goal, player, rank, stage_id, time_remaining, video_author,
-		          video_title, video_url
+		`  SELECT goal, id, player, rank, stage_id, time_remaining,
+		          video_author, video_title, video_url
 		     FROM videos
 		LEFT JOIN points USING (stage_id, goal, player, time_remaining)`,
 	)

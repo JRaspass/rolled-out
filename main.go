@@ -67,6 +67,8 @@ func main() {
 	r.Post("/players/{player}", playerAction)
 	r.With(videosAuth).Get("/videos", videos)
 	r.With(videosAuth).Post("/videos", videosAdd)
+	r.With(videosAuth).Get("/videos/{id}/delete", videosDelete)
+	r.With(videosAuth).Post("/videos/{id}/delete", videosDeleteConfirm)
 	r.Get("/videos/{stage}", videosRuns)
 	r.Get("/{world}", ranks)
 	r.Get("/{world}/{stage}", ranks)

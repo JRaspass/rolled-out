@@ -49,6 +49,17 @@ body {
 
 body > select { font-weight: bold }
 
+dl {
+    display: grid;
+    gap: .25rem .5rem;
+    grid-template-columns: auto 1fr;
+}
+
+dt {
+    font-weight: bold;
+    text-align: right;
+}
+
 form {
     display: flex;
     flex-wrap: wrap;
@@ -232,17 +243,17 @@ td > .badges > span { font-size: .75rem }
     width: 50%;
 }
 
-.table-35-15-auto-auto-50 td:nth-child(1),
-.table-35-15-auto-auto-50 td:nth-child(2),
-.table-35-15-auto-auto-50 td:nth-child(5) {
+.table-auto-35-15-auto-auto-50 td:nth-child(2),
+.table-auto-35-15-auto-auto-50 td:nth-child(3),
+.table-auto-35-15-auto-auto-50 td:nth-child(6) {
     max-width: 0;
     overflow: hidden;
     text-overflow: ellipsis;
 }
 
-.table-35-15-auto-auto-50 td:nth-child(1) { width: 35% }
-.table-35-15-auto-auto-50 td:nth-child(2) { width: 15% }
-.table-35-15-auto-auto-50 td:nth-child(5) { width: 50% }
+.table-auto-35-15-auto-auto-50 td:nth-child(2) { width: 35% }
+.table-auto-35-15-auto-auto-50 td:nth-child(3) { width: 15% }
+.table-auto-35-15-auto-auto-50 td:nth-child(6) { width: 50% }
 
 /* Ensure rank columns are the same width even with fewer than 100 clears */
 /* Enough space for "100" plus  0.5rem padding each side */

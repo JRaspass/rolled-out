@@ -27,6 +27,7 @@ type Stage struct {
 
 type Video struct {
 	Goal, Player, VideoURL  string
+	ID                      int
 	Rank                    *int
 	Stage                   *Stage `db:"stage_id"`
 	TimeRemaining           time.Duration

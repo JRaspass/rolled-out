@@ -1,0 +1,33 @@
+{{ template "head.html" . }}
+
+<h1>Delete Video</h1>
+
+{{ with .Data }}
+<dl>
+    <dt>ID
+    <dd>{{ .ID }}
+
+    <dt>Stage
+    <dd>{{ .Stage.World.Name }} / {{ .Stage.Name }}
+
+    <dt>Player
+    <dd><a href="/players/{{ .Player }}">{{ .Player }}</a>
+
+    <dt>Rank
+    <dd>{{ .Rank }}
+
+    <dt>Time
+    <dd>{{ time_sec .TimeRemaining }}
+
+    <dt>Video Author
+    <dd>{{ .VideoAuthor }}
+
+    <dt>Video Title
+    <dd>{{ .VideoTitle }}
+
+    <dt>Video URL
+    <dd><a href="{{ .VideoURL }}" target=_blank>{{ .VideoURL }}</a>
+</dl>
+
+<form method=post><button>Delete</button></form>
+{{ end }}

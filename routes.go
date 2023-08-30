@@ -270,6 +270,21 @@ func videosAuth(next http.Handler) http.Handler {
 	})
 }
 
+func videosDelete(w http.ResponseWriter, r *http.Request) {
+	video, err := model.GetVideo(db, chi.URLParam(r, "id"))
+	if err != nil {
+		panic(err)
+	}
+
+	views.Render(w, r, "videos-delete.html", "", "", video)
+}
+
+func videosDeleteConfirm(w http.ResponseWriter, r *http.Request) {
+	db.MustExec("DELETE FROM videos WHERE id = $1", chi.URLParam(r, "id"))
+
+	http.Redirect(w, r, "/videos", http.StatusSeeOther)
+}
+
 // TODO Nothing about this is video specific, replace with a generic API.
 func videosRuns(w http.ResponseWriter, r *http.Request) {
 	runs, err := model.Stages[chi.URLParam(r, "stage")].Runs(db)
