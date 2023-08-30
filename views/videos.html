@@ -2,9 +2,9 @@
 
 <form id=videoForm method=post name=add_video>
     <select name=stage>
-    {{ range .Worlds }}{{ range .Stages }}
-        <option value="{{ .ID }}">{{ .World.Code }} / {{ .Name }}
-    {{ end }}{{ end }}
+    {{ range .Data.Stages }}
+        <option value="{{ .ID }}">{{ .Name }} ({{ .World.Code }})
+    {{ end }}
     </select>
     <select name=run></select>
     <input name=url placeholder="https://youtu.be/xxx" required type=url>
@@ -22,7 +22,7 @@
             <th>URL
             <th>
     <tbody>
-    {{ range .Data }}
+    {{ range .Data.Videos }}
         {{ $s := .Stage }}
         {{ $w := .Stage.World }}
         <tr>

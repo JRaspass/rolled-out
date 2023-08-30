@@ -1,18 +1,21 @@
 package main
 
 import (
+	"cmp"
 	"encoding/json"
 	"fmt"
 	"log"
 	"net/http"
 	"net/url"
 	"os"
+	"slices"
 	"strings"
 
 	"github.com/JRaspass/rolled-out/model"
 	"github.com/JRaspass/rolled-out/views"
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
+	"golang.org/x/exp/maps"
 )
 
 var trAbstractionStage = model.Stages["b268ff63-3ada-4cfa-a40e-2d217430f5fd"]
@@ -207,12 +210,26 @@ func ranks(w http.ResponseWriter, r *http.Request) {
 }
 
 func videos(w http.ResponseWriter, r *http.Request) {
-	videos, err := model.Videos(db)
-	if err != nil {
+	data := struct {
+		Stages []*model.Stage
+		Videos []model.Video
+	}{Stages: maps.Values(model.Stages)}
+
+	// Sort by stage then world, looking at you, "Worm".
+	slices.SortFunc(data.Stages, func(a, b *model.Stage) int {
+		if c := cmp.Compare(a.Name, b.Name); c != 0 {
+			return c
+		}
+
+		return cmp.Compare(a.World.Code, b.World.Code)
+	})
+
+	var err error
+	if data.Videos, err = model.Videos(db); err != nil {
 		panic(err)
 	}
 
-	views.Render(w, r, "videos.html", "Videos", "", videos)
+	views.Render(w, r, "videos.html", "Videos", "", data)
 }
 
 // TODO Validation, error messages, etc.
