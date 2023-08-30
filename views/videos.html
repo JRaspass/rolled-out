@@ -1,6 +1,6 @@
 {{ template "head.html" . }}
 
-<form id=videoForm method=post name=add_video>
+<form id=videoForm method=post>
     <select name=stage>
     {{ range .Data.Stages }}
         <option value="{{ .ID }}">{{ .Name }} ({{ .World.Code }})
