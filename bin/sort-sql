@@ -8,10 +8,14 @@ my $path = path 'sql/b-data.sql';
 my $sql  = $path->slurp;
 
 # Sort all the lines after COPY.
-$sql =~ s{
-    (^COPY \N+ \n ) (.+?) (\n \\. $)
-}{
-    $1 . join( "\n", sort split /\n/, $2 ) . $3
+# Numeric sort if the first column of the first line looks like a number.
+$sql =~ s{^ ( COPY \N+ \n ) ( .+? ) ( \n \\. ) $}{
+    my ( $copy, $lines, $term ) = @{^CAPTURE};
+
+    my $cmp = $lines =~ /^ \d+ \t /ax
+        ? sub { no warnings 'numeric'; $a <=> $b } : sub { $a cmp $b };
+
+    $copy . join( "\n", sort $cmp split /\n/, $lines ) . $term;
 }egmsx;
 
 $path->spew($sql);
