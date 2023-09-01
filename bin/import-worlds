@@ -30,6 +30,17 @@ my %bg2world = (
     MasterMap       => $worlds[10], # Vortex
 );
 
+my %skip = (
+    # Tranquility / Scaling Test - Scoring not enabled.
+    'e848dd7d-7efd-4d65-8300-6834830afdce' => 1,
+
+    # Desert Ruins / Snakeway - Scoring not enabled.
+    'a7baa939-a0d3-4e46-8bca-66bcf1774861' => 1,
+
+    # Ice Cave / Keyholes - Not actually in the game?
+    '0021375d-5893-48cc-8d9b-eeab5ce8e1be' => 1,
+);
+
 # Find all the stage config files in the Steam directory.
 my @json;
 find sub { push @json, path $File::Find::name if $_ eq 'config.json' },
@@ -40,6 +51,8 @@ for my $json (@json) {
 
     my $bg = $conf->{background_map};
     next unless my $world = $bg2world{$bg} // die "Can't find $bg\n";
+
+    next if $skip{ $conf->{metadata}{uuid} };
 
     push $world->{stages}->@*, my $stage = {
         id    => $conf->{metadata}{uuid},

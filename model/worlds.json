@@ -245,12 +245,6 @@
             "timer" : 60
          },
          {
-            "id" : "e848dd7d-7efd-4d65-8300-6834830afdce",
-            "name" : "Scaling Test",
-            "slug" : "scaling-test",
-            "timer" : 60
-         },
-         {
             "id" : "ce755a77-a752-477c-9e3f-26a7a76558f1",
             "name" : "Seesawbstacles",
             "slug" : "seesawbstacles",
@@ -513,12 +507,6 @@
             "id" : "98da2ff3-6a7d-4da9-a720-37911c4ecfb2",
             "name" : "Slopeless",
             "slug" : "slopeless",
-            "timer" : 60
-         },
-         {
-            "id" : "a7baa939-a0d3-4e46-8bca-66bcf1774861",
-            "name" : "Snakeway",
-            "slug" : "snakeway",
             "timer" : 60
          },
          {
@@ -1405,12 +1393,6 @@
             "id" : "f92e9091-2cb0-4ee9-9946-35deead9c08f",
             "name" : "Interwoven",
             "slug" : "interwoven",
-            "timer" : 60
-         },
-         {
-            "id" : "0021375d-5893-48cc-8d9b-eeab5ce8e1be",
-            "name" : "Keyholes",
-            "slug" : "keyholes",
             "timer" : 60
          },
          {
