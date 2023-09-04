@@ -510,6 +510,12 @@
             "timer" : 60
          },
          {
+            "id" : "a7baa939-a0d3-4e46-8bca-66bcf1774861",
+            "name" : "Snakeway",
+            "slug" : "snakeway",
+            "timer" : 60
+         },
+         {
             "id" : "02ef33da-3cf5-4ca8-9788-ecfc1b0cb680",
             "name" : "Squiff",
             "slug" : "squiff",
