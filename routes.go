@@ -5,6 +5,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"log"
+	"math/rand"
 	"net/http"
 	"net/url"
 	"os"
@@ -139,47 +140,32 @@ func playerAction(w http.ResponseWriter, r *http.Request) {
 	http.Redirect(w, r, r.URL.String(), http.StatusSeeOther)
 }
 
+func random(w http.ResponseWriter, r *http.Request) {
+	url := model.RankLinks[rand.Intn(len(model.RankLinks))].Path
+	http.Redirect(w, r, url, http.StatusTemporaryRedirect)
+}
+
 func ranks(w http.ResponseWriter, r *http.Request) {
 	data := struct {
+		Link  *model.Link
+		Links []*model.Link
 		Rows  []model.Run
-		Stage *model.Stage
-		World *model.World
-	}{}
+	}{Links: model.RankLinks}
 
-	// Find the world (or return 404) if we have a world param.
-	if slug := chi.URLParam(r, "world"); slug != "" {
-		for _, world := range model.Worlds {
-			if slug == world.Slug {
-				data.World = world
-				break
-			}
-		}
-
-		if data.World == nil {
-			w.WriteHeader(http.StatusNotFound)
-			return
-		}
-
-		// Find the stage (or return 404) if we have a stage param.
-		if slug := chi.URLParam(r, "stage"); slug != "" {
-			for _, stage := range data.World.Stages {
-				if slug == stage.Slug {
-					data.Stage = stage
-					break
-				}
-			}
-
-			if data.Stage == nil {
-				w.WriteHeader(http.StatusNotFound)
-				return
-			}
-		}
+	// Find the link (or return 404).
+	if i := slices.IndexFunc(data.Links, func(link *model.Link) bool {
+		return link.Path == r.URL.Path
+	}); i >= 0 {
+		data.Link = data.Links[i]
+	} else {
+		w.WriteHeader(http.StatusNotFound)
+		return
 	}
 
 	var title, description string
 
-	if stage := data.Stage; stage != nil {
-		title = data.World.Name + " / " + data.Stage.Name
+	if stage := data.Link.Stage; stage != nil {
+		title = stage.World.Name + " / " + stage.Name
 
 		var err error
 		if data.Rows, err = stage.Runs(db); err != nil {
@@ -190,7 +176,7 @@ func ranks(w http.ResponseWriter, r *http.Request) {
 			description = fmt.Sprintf("🥇 %s %s",
 				views.TimeSec(data.Rows[0].TimeRemaining), data.Rows[0].Player)
 		}
-	} else if world := data.World; world != nil {
+	} else if world := data.Link.World; world != nil {
 		title = world.Name
 
 		var err error

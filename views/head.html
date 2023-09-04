@@ -15,8 +15,8 @@
 
 {{- if eq .Name "ranks.html" }}
 {{- $asset := "" }}
-{{- with .Data.World }}{{ $asset = asset "img" .Path ".jpg" }}{{ end }}
-{{- with .Data.Stage }}{{ $asset = asset "img" .Path ".jpg" }}{{ end }}
+{{- with .Data.Link.World }}{{ $asset = asset "img" .Path ".jpg" }}{{ end }}
+{{- with .Data.Link.Stage }}{{ $asset = asset "img" .Path ".jpg" }}{{ end }}
 
 {{- with $asset }}
 <meta property=og:image        content="https://rolledout.info{{ . }}">

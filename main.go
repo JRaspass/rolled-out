@@ -65,6 +65,7 @@ func main() {
 	r.Get("/latest/top-3", latest)
 	r.Get("/players/{player}", player)
 	r.Post("/players/{player}", playerAction)
+	r.Get("/random", random)
 	r.With(videosAuth).Get("/videos", videos)
 	r.With(videosAuth).Post("/videos", videosAdd)
 	r.With(videosAuth).Get("/videos/{id}/delete", videosDelete)

@@ -1,25 +1,33 @@
 {{ template "head.html" . }}
 
-<select autofocus>
-    <option value=/>Overall
-{{ range $i, $w := .Worlds }}
-    <optgroup label="{{ $w.Name }}">
-        <option value="/{{ $w.Slug }}"
-            {{- if and $.Data.World (eq $.Data.World.Slug $w.Slug) -}}
-                {{/* */}} selected
-            {{- end -}}
-        >All Stages ({{ $w.Name }})
-    {{ range $i, $s := .Stages }}
-        <option value="/{{ $w.Slug }}/{{ $s.Slug }}"
-            {{- if and $.Data.Stage (eq $.Data.Stage.ID $s.ID) -}}
-                {{/* */}} selected
-            {{- end -}}
-        >{{ $s.Name }}
-    {{ end }}
-{{ end }}
-</select>
+<form id=nav-form>
+    <select>
+    {{ $group := "" }}
+    {{ range .Data.Links }}
+        {{ if ne .Group $group }}
+            {{ $group = .Group }}
+            <optgroup label="{{ .Group }}">
+        {{ end }}
 
-{{ with .Data.Stage }}
+        <option value="{{ .Path }}" {{ if eq .Path $.Path }} selected {{ end }}>
+            {{ .Name }}
+    {{ end }}
+    </select>
+
+    <a href="{{ .Data.Link.Prev.Path }}" title=Previous>
+        <img src='{{ asset "img/arrow-left-square-fill.svg" }}'>
+    </a>
+
+    <a href=/random title=Random>
+        <img src='{{ asset "img/dice-3-fill.svg" }}'>
+    </a>
+
+    <a href="{{ .Data.Link.Next.Path }}" title=Next>
+        <img src='{{ asset "img/arrow-right-square-fill.svg" }}'>
+    </a>
+</form>
+
+{{ with .Data.Link.Stage }}
 <div id=stage-header>
 {{ with asset "img" .Path ".jpg" }}
     <img src="{{ . }}">
@@ -47,7 +55,7 @@
         <tr>
             <th class=center title=Rank>#
             <th>Player
-        {{ if .Data.Stage }}
+        {{ if .Data.Link.Stage }}
             <th class=right>Time
             <th class="right wide">Δ ms
             <th class=right>Points
@@ -70,7 +78,7 @@
                     <span class="goal-{{ lower .Goal }}">{{ .Goal }}</span>
                 {{ end }}
                 </div>
-        {{ if $.Data.Stage }}
+        {{ if $.Data.Link.Stage }}
             <td class=right>
             {{ if .VideoURL }}
                 <a href="{{ .VideoURL }}" target=_blank>

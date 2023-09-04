@@ -1,5 +1,5 @@
 // Navigation selects.
-document.querySelector('body > select')?.addEventListener(
+document.querySelector('#nav-form select')?.addEventListener(
     'change', e => location = e.target.value);
 
 // Sortable tables.

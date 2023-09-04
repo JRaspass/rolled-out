@@ -6,6 +6,13 @@ import (
 	"time"
 )
 
+type Link struct {
+	Group, Name, Path string
+	Prev, Next        *Link
+	Stage             *Stage
+	World             *World
+}
+
 // Contains the superset of fields every different table needs.
 // TODO Probably needs splitting apart then there's a JSON API.
 type Run struct {
@@ -47,6 +54,7 @@ var worldsJSON []byte
 
 var Stages = map[string]*Stage{}
 var Worlds = []*World{}
+var RankLinks = []*Link{}
 
 func init() {
 	if err := json.Unmarshal(worldsJSON, &Worlds); err != nil {
@@ -60,6 +68,43 @@ func init() {
 			stage.World = world
 
 			Stages[stage.ID] = stage
+		}
+	}
+
+	// Overall + Worlds + Stages.
+	RankLinks = make([]*Link, 1, 1+len(Worlds)+len(Stages))
+	RankLinks[0] = &Link{Name: "Overall", Path: "/"}
+
+	for _, world := range Worlds {
+		RankLinks = append(RankLinks, &Link{
+			Group: world.Name,
+			Name:  "All Stages (" + world.Name + ")",
+			Path:  world.Path(),
+			World: world,
+		})
+
+		for _, stage := range world.Stages {
+			RankLinks = append(RankLinks, &Link{
+				Group: world.Name,
+				Name:  stage.Name,
+				Path:  stage.Path(),
+				Stage: stage,
+				World: world,
+			})
+		}
+	}
+
+	for i, link := range RankLinks {
+		if i == 0 {
+			link.Prev = RankLinks[len(RankLinks)-1]
+		} else {
+			link.Prev = RankLinks[i-1]
+		}
+
+		if i == len(RankLinks)-1 {
+			link.Next = RankLinks[0]
+		} else {
+			link.Next = RankLinks[i+1]
 		}
 	}
 }
