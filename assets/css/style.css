@@ -78,6 +78,8 @@ form button {
 form button:hover { background: var(--pink) }
 
 h1 {
+    font-size: 36px;
+    line-height: 36px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
@@ -88,25 +90,25 @@ header {
     position: sticky;
     top: 0;
     z-index: 1;
-}
 
-nav {
-    display: flex;
-    margin: auto;
-    max-width: var(--max-width);
-}
+    > nav {
+        display: flex;
+        margin: auto;
+        max-width: var(--max-width);
 
-nav a {
-    color: var(--white);
-    flex: 1;
-    font-size: 1.5rem;
-    font-weight: bold;
-    line-height: 3rem;
-    text-align: center;
-    text-decoration: none;
-}
+        > a {
+            color: var(--white);
+            flex: 1;
+            font-size: 1.5rem;
+            font-weight: bold;
+            line-height: 3rem;
+            text-align: center;
+            text-decoration: none;
 
-nav a:is(.on, :hover) { background: var(--pink) }
+            &.on, &:hover { background: var(--pink) }
+        }
+    }
+}
 
 select {
     background: var(--white);
@@ -278,6 +280,37 @@ td.rank-3 { background: url(../img/bronze.png) center / 1.5rem no-repeat,
 .right  { text-align: right }
 
 .thin { display: none }
+
+#stage-header {
+    display: grid;
+    gap: 0 .75rem;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr auto auto;
+
+    h1 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+
+    > img:first-child {
+        border: 2px solid var(--black);
+        grid-row: span 3;
+        height: 6rem;
+        width: 6rem;
+    }
+
+    nav {
+        align-items: center;
+        display: flex;
+        gap: .375rem;
+
+        img {
+            height: 1rem;
+            width: 1rem;
+        }
+    }
+}
 
 #videoForm > :not(button) {
     flex: 1;

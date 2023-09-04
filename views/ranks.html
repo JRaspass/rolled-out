@@ -19,6 +19,29 @@
 {{ end }}
 </select>
 
+{{ with .Data.Stage }}
+<div id=stage-header>
+{{ with asset "img" .Path ".jpg" }}
+    <img src="{{ . }}">
+{{ else }}
+    <img src='{{ asset "img/placeholder.jpg" }}'>
+{{ end }}
+    <h1>{{ .Name }}</h1>
+    <nav>
+        <img src='{{ asset "img/globe2.svg" }}'>
+        {{ .World.Name }}
+    {{ with .Timer }}
+        <span></span>
+        <img src='{{ asset "img/clock.svg" }}'>
+        {{ . }}s
+    {{ end }}
+    </nav>
+    <a href="//scores.rolledoutgame.com/stages/{{ .ID }}" target=_blank>
+        scores.rolledoutgame.com
+    </a>
+</div>
+{{ end }}
+
 <table class=overflow-second>
     <thead>
         <tr>
