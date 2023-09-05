@@ -25,11 +25,11 @@ type Run struct {
 }
 
 type Stage struct {
-	ID    string `json:"id"`
-	Name  string `json:"name"`
-	Slug  string `json:"slug"`
-	Timer int    `json:"timer"`
-	World *World `json:"-"`
+	ID    string        `json:"id"`
+	Name  string        `json:"name"`
+	Slug  string        `json:"slug"`
+	Timer time.Duration `json:"timer"`
+	World *World        `json:"-"`
 }
 
 type Video struct {

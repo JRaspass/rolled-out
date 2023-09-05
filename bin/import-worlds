@@ -38,6 +38,35 @@ my %skip = (
     '0021375d-5893-48cc-8d9b-eeab5ce8e1be' => 1,
 );
 
+# Some timers are missing (or wrong!) in the config files.
+my %timers = qw(
+    0d66cb97-ee40-4eee-938b-3c9f4b52d967 60
+    103a2951-08db-4a65-a6b4-a242aef45890 60
+    1a38e358-e530-4b9f-a20e-98306c5e0b42 60
+    2019895e-b14f-4443-b72c-45772b58296f 60
+    28615ea3-736e-4141-9f4a-5746b23e610f 60
+    2a36b3f8-1b04-47ac-928c-2c8667d7d41d 60
+    2d5a485d-d551-4699-ad79-0ddad156c446 60
+    321b4dd3-3e29-475c-b1ba-1daa905a282f 60
+    32e968ba-f0fb-484b-82da-4274d10e9b83 60
+    5c93d30a-9a1d-4d89-bf59-1081e19ae4d0 60
+    664533d7-8f61-4943-bce5-7505dcdba8f8 60
+    6f74c174-18a2-4bc2-81b2-0f79d5cf5fd6 60
+    82de5b4e-2e45-4467-9ba3-bbd4d4d352c1 60
+    8787487c-4ef0-4dea-bab0-2709e0932504 60
+    8e1e5189-5cef-43e7-bf22-e44a0824bda8 60
+    8ecfe994-2ad4-4647-9346-efb71c830f0a 60
+    913a3aa7-105f-4974-8990-8ffb8bb60e9d 60
+    a1376f08-95dd-483f-8d9f-be177c08ef2c 60
+    aecf6fc7-0d80-42bf-a060-6a225edb3492 60
+    b9e4a71b-1941-4e46-8ea8-b577de0df425 60
+    bcf02d63-88f3-47a8-95ef-2ce1dda400a6 60
+    c0f55d69-89ac-428a-8aba-496fbe952678 60
+    e1fc9b7d-cef2-48bd-ae43-5b99598283a1 60
+    e20725ac-da8a-48cc-8710-8e948de679a1 60
+    ef7d0849-4c66-4aaa-88c9-635a38d9813c 60
+);
+
 # Find all the stage config files in the Steam directory.
 my @json;
 find sub { push @json, path $File::Find::name if $_ eq 'config.json' },
@@ -52,11 +81,12 @@ for my $json (@json) {
     next if $skip{ $conf->{metadata}{uuid} };
 
     push $world->{stages}->@*, my $stage = {
-        id    => $conf->{metadata}{uuid},
-        name  => $conf->{metadata}{name}{fallback},
-        slug  => slug( $conf->{metadata}{name}{fallback} ),
-        timer => $conf->{timer_seconds},
+        id   => $conf->{metadata}{uuid},
+        name => $conf->{metadata}{name}{fallback},
+        slug => slug( $conf->{metadata}{name}{fallback} ),
     };
+
+    $stage->{timer} = ( $timers{ $stage->{id} } // $conf->{timer_seconds} ) * 1e9;
 
     say $stage->{name};
 

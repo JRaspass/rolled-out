@@ -55,6 +55,13 @@ func scrape(db *sqlx.DB) {
 			panic(err)
 		}
 
+		// Sanity check our stage timers agree.
+		if t, _ := time.ParseDuration(strings.TrimPrefix(
+			text(query(query(doc, ".object-hero__stats"), "li")), "Timer: ",
+		)); t != stage.Timer {
+			log.Printf("%s: %v != %v\n", stage.ID, t, stage.Timer)
+		}
+
 		for _, li := range queryAll(query(doc, "ul.leaderboard-list"), "li") {
 			var run model.Run
 
@@ -95,6 +102,12 @@ func scrape(db *sqlx.DB) {
 				strings.SplitAfter(attr(div, "title"), "s")[0],
 			); err != nil {
 				panic(err)
+			}
+
+			// Sanity check that the timings add up correctly.
+			if stage.Timer != run.TimeRemaining+run.TimeTaken {
+				log.Printf("%s: %v != %v + %v\n",
+					stage.ID, stage.Timer, run.TimeRemaining, run.TimeTaken)
 			}
 
 			tx.MustExec(

@@ -38,11 +38,9 @@
     <nav>
         <img src='{{ asset "img/globe2.svg" }}'>
         {{ .World.Name }}
-    {{ with .Timer }}
         <span></span>
         <img src='{{ asset "img/clock.svg" }}'>
-        {{ . }}s
-    {{ end }}
+        {{ .Timer.Seconds }}s
     </nav>
     <a href="//scores.rolledoutgame.com/stages/{{ .ID }}" target=_blank>
         scores.rolledoutgame.com
