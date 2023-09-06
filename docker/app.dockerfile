@@ -1,4 +1,4 @@
-FROM golang:1.21.0 AS dev
+FROM golang:1.21.1 AS dev
 
 ENV CGO_ENABLED=0 GOAMD64=v4 GOPATH=
 
