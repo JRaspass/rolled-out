@@ -1,10 +1,14 @@
 {{ template "head.html" . }}
 
-<select autofocus>
-    <option value=/latest>All
-    <option value=/latest/top-10 {{ if eq .Path "/latest/top-10" }} selected {{ end }}>Top 10
-    <option value=/latest/top-3  {{ if eq .Path "/latest/top-3"  }} selected {{ end }}>Top 3
-</select>
+<form id=nav-form>
+    <select autofocus>
+        <option value=/latest>All
+        <option value=/latest/top-10 {{ if eq .Path "/latest/top-10" }} selected {{ end }}>
+            Top 10
+        <option value=/latest/top-3  {{ if eq .Path "/latest/top-3"  }} selected {{ end }}>
+            Top 3
+    </select>
+</form>
 
 <table class=overflow-first-second>
     <thead>
