@@ -1,6 +1,6 @@
 FROM scratch
 
-ADD --chmod=755 https://unpkg.com/@esbuild/linux-x64@0.19.2/bin/esbuild /
+ADD --chmod=755 https://unpkg.com/@esbuild/linux-x64@0.19.3/bin/esbuild /
 
 WORKDIR /assets
 
