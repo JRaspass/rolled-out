@@ -46,3 +46,10 @@ if (videoForm) {
         }));
     })();
 }
+
+// Wire up any dialogs.
+for (const dialog of document.querySelectorAll('dialog')) {
+    dialog.onclick = e => e.target == dialog ? dialog.close() : null;
+
+    dialog.nextElementSibling.onclick = () => dialog.showModal();
+}

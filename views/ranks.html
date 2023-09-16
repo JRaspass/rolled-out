@@ -75,6 +75,40 @@
                 {{ if and .Goal (ne .Goal "Blue") }}
                     <span class="goal-{{ lower .Goal }}">{{ .Goal }}</span>
                 {{ end }}
+                {{ $records := (index $.Data.RecentRecords .Player) }}
+                {{ if ge (len $records) 3 }}
+                    <dialog>
+                        <div>
+                            <h2>🔥 {{ .Player }} is on fire!</h2>
+                            <!-- Keep in sync with the SQL -->
+                            <p>Three or more top threes in the last three days:
+                            <table class=overflow-first>
+                                <thead>
+                                    <tr>
+                                        <th>Stage
+                                        <th class=center>Rank
+                                        <th class="center wide">Time
+                                        <th class=center>Date
+                                <tbody>
+                                {{ range $records }}
+                                    <tr>
+                                        <td>
+                                            <a href="/{{ .Stage.World.Slug }}">
+                                                {{ .Stage.World.Code }}
+                                            </a>
+                                            /
+                                            <a href="{{ .Stage.Path }}">
+                                                {{ .Stage.Name }}
+                                            </a>
+                                        <td class="rank-{{ .Rank }}">{{ .Rank }}
+                                        <td class="right wide">{{ time_sec .TimeRemaining }}
+                                        <td class=right>{{ date .Date }}
+                                {{ end }}
+                            </table>
+                        </div>
+                    </dialog>
+                    <button>🔥</button>
+                {{ end }}
                 </div>
         {{ if $.Data.Link.Stage }}
             <td class=right>

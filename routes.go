@@ -147,9 +147,10 @@ func random(w http.ResponseWriter, r *http.Request) {
 
 func ranks(w http.ResponseWriter, r *http.Request) {
 	data := struct {
-		Link  *model.Link
-		Links []*model.Link
-		Rows  []model.Run
+		Link          *model.Link
+		Links         []*model.Link
+		RecentRecords map[string][]*model.Run
+		Rows          []model.Run
 	}{Links: model.RankLinks}
 
 	// Find the link (or return 404).
@@ -187,6 +188,10 @@ func ranks(w http.ResponseWriter, r *http.Request) {
 		title = "Overall Ranks"
 
 		var err error
+		if data.RecentRecords, err = model.RecentRecords(db); err != nil {
+			panic(err)
+		}
+
 		if data.Rows, err = model.OverallRuns(db); err != nil {
 			panic(err)
 		}

@@ -47,6 +47,31 @@ body {
     padding: 0 1rem 1rem;
 }
 
+button { cursor: pointer }
+
+dialog {
+    background: var(--yellow);
+    border: 1px solid var(--black);
+    inset: 50%;
+    max-width: calc(100vw - 2rem);
+    padding: 0;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    width: 30rem;
+
+    &::backdrop { backdrop-filter: blur(.25rem) }
+
+    > * {
+        display: grid;
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    p { white-space: normal }
+
+    th { position: static !important }
+}
+
 dl {
     display: grid;
     gap: .25rem .5rem;
@@ -165,7 +190,6 @@ thead th {
         background: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 4 5'><path d='M2 0L0 2h4zm0 5L0 3h4' fill='%23bbb'/></svg>") left center / .675rem no-repeat;
         border: 0;
         color: var(--black);
-        cursor: pointer;
         font-weight: bold;
         padding: 0 0 0 1rem;
 
@@ -186,10 +210,16 @@ td.right > .badges { justify-content: flex-end }
     gap: .5rem;
 }
 
-.badges > :not(span) {
+.badges > :is(a, div) {
     flex: 1;
     overflow: hidden;
     text-overflow: ellipsis;
+}
+
+.badges > button {
+    background: none;
+    border: 0;
+    padding: 0;
 }
 
 .badges > span {

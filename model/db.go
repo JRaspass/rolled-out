@@ -26,6 +26,26 @@ func PlayerRuns(db *sqlx.DB, player string) (runs []Run, err error) {
 	return
 }
 
+func RecentRecords(db *sqlx.DB) (map[string][]*Run, error) {
+	var runs []*Run
+	err := db.Select(
+		&runs,
+		` SELECT clear, date, player, rank, stage_id, time_remaining
+		    FROM points
+		      -- Keep in sync with the view.
+		   WHERE date >= now() - interval '3 days'
+		     AND rank <= 3
+		ORDER BY date DESC`,
+	)
+
+	records := map[string][]*Run{}
+	for _, run := range runs {
+		records[run.Player] = append(records[run.Player], run)
+	}
+
+	return records, err
+}
+
 func GetVideo(db *sqlx.DB, id string) (*Video, error) {
 	var video Video
 	err := db.Get(
