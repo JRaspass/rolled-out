@@ -1,9 +1,6 @@
 package model
 
 import (
-	"cmp"
-	"slices"
-
 	"github.com/jmoiron/sqlx"
 	"github.com/lib/pq"
 )
@@ -66,34 +63,9 @@ func Videos(db *sqlx.DB) (videos []Video, err error) {
 		`  SELECT goal, id, player, rank, stage_id, time_remaining,
 		          video_author, video_title, video_url
 		     FROM videos
-		LEFT JOIN points USING (stage_id, goal, player, time_remaining)`,
+		LEFT JOIN points USING (stage_id, goal, player, time_remaining)
+		 ORDER BY id DESC`,
 	)
-
-	slices.SortFunc(videos, func(a, b Video) int {
-		// World asc
-		if c := cmp.Compare(a.Stage.World.Sort, b.Stage.World.Sort); c != 0 {
-			return c
-		}
-
-		// Stage asc
-		if c := cmp.Compare(a.Stage.Name, b.Stage.Name); c != 0 {
-			return c
-		}
-
-		// Goal asc
-		if c := cmp.Compare(a.Goal, b.Goal); c != 0 {
-			return c
-		}
-
-		// Time desc
-		if c := cmp.Compare(b.TimeRemaining, a.TimeRemaining); c != 0 {
-			return c
-		}
-
-		// Player asc
-		return cmp.Compare(a.Player, b.Player)
-	})
-
 	return
 }
 
