@@ -25,13 +25,18 @@ func PlayerRuns(db *sqlx.DB, player string) (runs []Run, err error) {
 
 func RecentRecords(db *sqlx.DB) (map[string][]*Run, error) {
 	var runs []*Run
+
+	// Keep in sync with the view.
 	err := db.Select(
 		&runs,
-		` SELECT clear, date, player, rank, stage_id, time_remaining
-		    FROM points
-		      -- Keep in sync with the view.
-		   WHERE date >= now() - interval '3 days'
-		     AND rank <= 3
+		`WITH points_with_count AS (
+		    SELECT *, COUNT(*) OVER (PARTITION BY player) record_count
+		      FROM points
+		     WHERE date >= now() - interval '3 days'
+		       AND rank <= 3
+		) SELECT date, player, rank, stage_id, time_remaining
+		    FROM points_with_count
+		   WHERE record_count >= 3
 		ORDER BY date DESC`,
 	)
 

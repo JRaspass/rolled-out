@@ -76,7 +76,7 @@
                     <span class="goal-{{ lower .Goal }}">{{ .Goal }}</span>
                 {{ end }}
                 {{ $records := (index $.Data.RecentRecords .Player) }}
-                {{ if ge (len $records) 3 }}
+                {{ if $records }}
                     <dialog>
                         <div>
                             <h2>🔥 {{ .Player }} is on fire!</h2>
