@@ -208,26 +208,26 @@ td.right > .badges { justify-content: flex-end }
 .badges {
     display: flex;
     gap: .5rem;
-}
 
-.badges > :is(a, div) {
-    flex: 1;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
+    & > :is(a, div) {
+        flex: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 
-.badges > button {
-    background: none;
-    border: 0;
-    padding: 0;
-}
+    & > button {
+        background: none;
+        border: 0;
+        padding: 0;
+    }
 
-.badges > span {
-    align-items: center;
-    border-radius: .25rem;
-    display: flex;
-    font-weight: bold;
-    padding: .125rem .25rem;
+    & > span {
+        align-items: center;
+        border-radius: .25rem;
+        display: flex;
+        font-weight: bold;
+        padding: .125rem .25rem;
+    }
 }
 
 td > .badges > span { font-size: .75rem }
