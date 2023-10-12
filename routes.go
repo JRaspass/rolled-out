@@ -4,7 +4,6 @@ import (
 	"cmp"
 	"encoding/json"
 	"fmt"
-	"log"
 	"math/rand"
 	"net/http"
 	"net/url"
@@ -13,6 +12,7 @@ import (
 	"strings"
 
 	"github.com/JRaspass/rolled-out/model"
+	"github.com/JRaspass/rolled-out/video"
 	"github.com/JRaspass/rolled-out/views"
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
@@ -225,25 +225,9 @@ func videos(w http.ResponseWriter, r *http.Request) {
 
 // TODO Validation, error messages, etc.
 func videosAdd(w http.ResponseWriter, r *http.Request) {
-	oembed := struct {
-		AuthorName *string `json:"author_name"`
-		Title      *string `json:"title"`
-	}{}
-
-	videoURL := r.PostFormValue("url")
-
-	if strings.HasPrefix(videoURL, "https://youtu.be/") {
-		res, err := http.Get("https://www.youtube.com/oembed?url=" + videoURL)
-		if err != nil {
-			panic(err)
-		}
-		defer res.Body.Close()
-
-		if err := json.NewDecoder(res.Body).Decode(&oembed); err != nil {
-			panic(err)
-		}
-
-		log.Println(oembed)
+	vid, err := video.Parse(r.PostFormValue("url"))
+	if err != nil {
+		http.Error(w, err.Error(), http.StatusBadRequest)
 	}
 
 	goalTimePlayer := strings.SplitN(r.PostFormValue("run"), "-", 3)
@@ -256,9 +240,9 @@ func videosAdd(w http.ResponseWriter, r *http.Request) {
 		goalTimePlayer[2],
 		r.PostFormValue("stage"),
 		goalTimePlayer[1],
-		oembed.AuthorName,
-		oembed.Title,
-		videoURL,
+		vid.Author,
+		vid.Title,
+		vid.URL,
 	)
 
 	http.Redirect(w, r, r.URL.String(), http.StatusSeeOther)
