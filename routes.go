@@ -208,11 +208,10 @@ func videos(w http.ResponseWriter, r *http.Request) {
 
 	// Sort by stage then world, looking at you, "Worm".
 	slices.SortFunc(data.Stages, func(a, b *model.Stage) int {
-		if c := cmp.Compare(a.Name, b.Name); c != 0 {
-			return c
-		}
-
-		return cmp.Compare(a.World.Code, b.World.Code)
+		return cmp.Or(
+			cmp.Compare(a.Name, b.Name),
+			cmp.Compare(a.World.Code, b.World.Code),
+		)
 	})
 
 	var err error
