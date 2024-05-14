@@ -2,7 +2,7 @@ export COMPOSE_FILE=docker/compose.yml
 
 bump:
 	@go get -u
-	@go mod tidy -compat=1.21
+	@go mod tidy -compat=1.22
 
 db:
 	@ssh -t root@rolledout.info sudo -iu postgres psql rolled-out

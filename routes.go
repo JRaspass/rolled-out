@@ -4,7 +4,7 @@ import (
 	"cmp"
 	"encoding/json"
 	"fmt"
-	"math/rand"
+	"math/rand/v2"
 	"net/http"
 	"net/url"
 	"os"
@@ -141,7 +141,7 @@ func playerAction(w http.ResponseWriter, r *http.Request) {
 }
 
 func random(w http.ResponseWriter, r *http.Request) {
-	url := model.RankLinks[rand.Intn(len(model.RankLinks))].Path
+	url := model.RankLinks[rand.IntN(len(model.RankLinks))].Path
 	http.Redirect(w, r, url, http.StatusTemporaryRedirect)
 }
 

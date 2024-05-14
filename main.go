@@ -58,7 +58,7 @@ func main() {
 	r.Get("/", ranks)
 	r.Get("/about", about)
 	r.Get("/dist/*", assets.Serve)
-	r.Get("/favicon.ico", http.FileServer(http.FS(favicon)).ServeHTTP)
+	r.Get("/favicon.ico", http.FileServerFS(favicon).ServeHTTP)
 	r.Get("/grid", grid)
 	r.Get("/latest", latest)
 	r.Get("/latest/top-10", latest)
